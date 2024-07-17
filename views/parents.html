@@ -1,0 +1,5428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parents</title>
+
+    <script src="https://kit.fontawesome.com/544631e2ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" media='screen and (min-width: 576px)' href="css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="css/large.css">
+
+  <style>
+    div.gallery {
+  border: 1px solid #ccc;
+  border-radius:15px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Basic styling for body */
+body {
+    padding-top: 56px; /* Height of the navbar */
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+/* Styling for the navbar */
+.navbar {
+    
+    border-bottom: 1px solid #e7e7e7;
+    
+}
+
+.navbar-brand {
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 100px; 
+}
+
+/* Custom styling for the navbar */
+.navbar-custom {
+    background-color: white; /* Change this color to your desired color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .dropdown-menu {
+    color: black; /* Ensure text is readable against the background */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-menu a:hover {
+    color: black; /* Optional: Change hover color */
+}
+
+
+/* Increase space between nav items */
+.nav-item {
+    margin-right: 60px; /* Adjust this value as needed */
+    
+}
+
+/* Styling for dropdown menus */
+.nav-item .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+}
+
+.nav-item .dropdown-menu a {
+    color: #333333;
+}
+
+.nav-item .dropdown-menu a:hover {
+    background-color: salmon;
+    border-radius: 5px;
+}
+
+/* Custom button styles */
+.btn-custom {
+    background-color: crimson;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: white;
+}
+.btn-primary {
+    background-color: salmon;
+    border-radius: 50px;
+}
+/* Footer styling */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer .text-muted {
+    color: #777777;
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 20px;
+}
+
+
+.jumbotron1 {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+
+    color: black;
+    padding: 1rem 1rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
+
+.jumbotron1 p {
+    font-size: 1.2rem;
+}
+
+/* Custom button styles */
+section.icon-grid {
+    padding: 0 30px
+}
+
+section.icon-grid .linkAnchor {
+    position: relative;
+    top: -80px
+}
+
+section.icon-grid .layout-column {
+    width: 100%
+}
+
+section.icon-grid .grid-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px
+}
+
+section.icon-grid .grid-heading-container .icon-grid-title {
+    margin: 30px auto;
+    font-weight: 700;
+    text-align: center
+}
+
+section.icon-grid .grid-heading-container .icon-grid-subtitle {
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: 400
+}
+
+section.icon-grid .grid-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px
+}
+
+section.icon-grid .grid-card amp-img {
+    flex-basis: 50%;
+    height: 100%;
+    border-radius: 28px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.05)
+}
+
+section.icon-grid .grid-card amp-img.amp-img-desktop {
+    display: none !important
+}
+
+section.icon-grid .grid-card .card-content {
+    margin-left: 30px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+section.icon-grid .grid-card .card-content .plus {
+    display: flex;
+    width: 72px;
+    height: 24px;
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #6236FF;
+    margin-bottom: 5px
+}
+
+section.icon-grid .grid-card .card-content .plus span {
+    color: #fff;
+    font-family: Soleil;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 20px
+}
+
+section.icon-grid .grid-card .card-content h2 {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0;
+    color: #1B0E3D;
+    margin-bottom: 5px
+}
+
+section.icon-grid .grid-card .card-content p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #858492
+}
+
+section.icon-grid .btn {
+    margin-top: 30px
+}
+
+@media screen and (min-width: 1024px) {
+    section.icon-grid .icon-grid-container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px
+    }
+
+    section.icon-grid .icon-grid-container .grid-card {
+        width: 23%;
+        aspect-ratio: 1 / 1;
+        background: #FFFFFF;
+        border-radius: 31px;
+        margin: 8px;
+        flex-direction: column;
+        overflow: hidden
+    }
+
+    section.icon-grid .icon-grid-container .grid-card amp-img {
+        margin: 10px 0 15px 0;
+        border-radius: 0;
+        box-shadow: none
+    }
+
+    section.icon-grid .icon-grid-container .grid-card amp-img.amp-img-desktop {
+        display: initial !important
+    }
+
+    section.icon-grid .icon-grid-container .grid-card amp-img.amp-img-mobile {
+        display: none
+    }
+
+    section.icon-grid .icon-grid-container .grid-card .card-content {
+        flex-basis: initial;
+        margin: 0 50px 0 30px
+    }
+
+    section.icon-grid .icon-grid-container .grid-card .card-content h2 {
+        font-size: 18px
+    }
+
+    section.icon-grid .icon-grid-container .grid-card .card-content p {
+        font-size: 12px
+    }
+}
+
+section.resizable-grid .row-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+section.resizable-grid .layout-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    width: 100%
+}
+
+section.resizable-grid .layout-column .resizable-grid-title {
+    margin: 30px auto;
+    font-weight: 700;
+    text-align: center
+}
+
+section.resizable-grid .layout-column .resizable-grid-subtitle {
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 auto 30px auto
+}
+
+section.resizable-grid .resizable-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 390px;
+    margin-bottom: 30px;
+    width: 100%
+}
+
+@media screen and (min-width: 1024px) {
+    section.resizable-grid .resizable-grid-container {
+        max-width:940px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.resizable-grid .resizable-grid-container {
+        max-width:940px
+    }
+}
+
+section.resizable-grid .resizable-grid-container .grid-card {
+    aspect-ratio: 1 / 1;
+    grid-column: 1 / 3;
+    padding: 20px;
+    position: relative
+}
+
+section.resizable-grid .resizable-grid-container .grid-card .grid-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+section.resizable-grid .resizable-grid-container .grid-card .card-content {
+    position: relative;
+    z-index: 2
+}
+
+section.resizable-grid .resizable-grid-container .grid-card h2 {
+    font-family: 'buenosaires'
+}
+
+@media screen and (min-width: 1024px) {
+    section.resizable-grid .resizable-grid-container .grid-card {
+        grid-column:1/3;
+        aspect-ratio: 2 / 1;
+        padding: 30px
+    }
+
+    section.resizable-grid .resizable-grid-container .grid-card[data-width="half"] {
+        grid-column: initial;
+        aspect-ratio: 1 / 1
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.resizable-grid .resizable-grid-container .grid-card {
+        grid-column:1/3;
+        aspect-ratio: 2 / 1;
+        padding: 30px
+    }
+
+    section.resizable-grid .resizable-grid-container .grid-card[data-width="half"] {
+        grid-column: initial;
+        aspect-ratio: 1 / 1
+    }
+}
+
+section.resizable-grid .grid-btn-container {
+    margin-bottom: 30px
+}
+
+section.popular-articles .layout-column {
+    width: 100%
+}
+
+section.popular-articles .popular-articles-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+section.popular-articles .popular-articles-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px
+}
+
+section.popular-articles .popular-articles-container .grid-card {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-bottom: 20px
+}
+
+section.popular-articles .popular-articles-container .grid-card amp-img {
+    border-radius: 25px
+}
+
+section.popular-articles .popular-articles-container .grid-card .amp-img-mobile {
+    display: flex
+    
+
+}
+
+section.popular-articles .popular-articles-container .grid-card .amp-img-desktop {
+    display: none
+}
+
+section.popular-articles .popular-articles-container .grid-card a {
+    white-space: normal;
+    color: #000
+}
+
+section.popular-articles .popular-articles-container .grid-card a h2 {
+    margin-top: 15px;
+    font-family: 'soleil';
+    max-width: 240px;
+    font-size: 20px;
+    line-height: 24px
+}
+
+section.popular-articles .popular-articles-container .grid-card .grid-btn-container a {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    max-width: 130px
+}
+
+section.popular-articles .popular-articles-container .grid-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+@media screen and (min-width: 1024px) {
+    section.popular-articles .popular-articles-container {
+        flex-direction:row
+    }
+
+    section.popular-articles .popular-articles-container .grid-card {
+        margin-right: 25px
+    }
+
+    section.popular-articles .popular-articles-container .grid-card:last-of-type {
+        margin-right: 0
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .amp-img-desktop {
+        display: flex
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .amp-img-mobile {
+        display: none
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height: 480px
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1150px) {
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height:532px
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1300px) {
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height:580px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.popular-articles .popular-articles-container {
+        flex-direction:row
+    }
+
+    section.popular-articles .popular-articles-container .grid-card {
+        margin-right: 25px
+    }
+
+    section.popular-articles .popular-articles-container .grid-card:last-of-type {
+        margin-right: 0
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .amp-img-desktop {
+        display: flex
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .amp-img-mobile {
+        display: none
+    }
+
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height: 480px
+    }
+}
+
+@media screen and (min-width: desktop) and (min-width: 1150px) {
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height:532px
+    }
+}
+
+@media screen and (min-width: desktop) and (min-width: 1300px) {
+    section.popular-articles .popular-articles-container .grid-card .card-content {
+        min-height:580px
+    }
+}
+
+section.debit-card-slider .container {
+    position: relative;
+    height: 982px;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 25px;
+    max-width: 375px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .container {
+        height:698px;
+        max-width: 1024px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .container {
+        height:698px;
+        max-width: 1024px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section.debit-card-slider .container {
+        height:984px;
+        max-width: 1440px
+    }
+}
+
+section.debit-card-slider .content-wrapper {
+    width: 462px;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .content-wrapper {
+        width:unset
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .content-wrapper {
+        width:unset
+    }
+}
+
+section.debit-card-slider .slide {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: width 0s 1s;
+    margin-left: -34px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .slide {
+        margin-left:unset
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .slide {
+        margin-left:unset
+    }
+}
+
+section.debit-card-slider input {
+    display: none
+}
+
+section.debit-card-slider .slide amp-img {
+    min-width: 462px;
+    max-width: 462px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .slide amp-img {
+        min-width:1024px;
+        max-width: 1024px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .slide amp-img {
+        min-width:1024px;
+        max-width: 1024px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section.debit-card-slider .slide amp-img {
+        min-width:1440px;
+        max-width: 1440px
+    }
+}
+
+section.debit-card-slider [id^="slide"]:checked+.slide {
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    transition: width 1s cubic-bezier(0.65, 0.05, 0.36, 1)
+}
+
+section.debit-card-slider .text-white:checked ~ .overlay h2,section.debit-card-slider .text-white:checked ~ .overlay p {
+    color: white
+}
+
+section.debit-card-slider #slide-1-trigger:checked ~ .overlay label[for="slide-1-trigger"],section.debit-card-slider #slide-2-trigger:checked ~ .overlay label[for="slide-2-trigger"],section.debit-card-slider #slide-3-trigger:checked ~ .overlay label[for="slide-3-trigger"],section.debit-card-slider #slide-4-trigger:checked ~ .overlay label[for="slide-4-trigger"],section.debit-card-slider #slide-5-trigger:checked ~ .overlay label[for="slide-5-trigger"],section.debit-card-slider #slide-6-trigger:checked ~ .overlay label[for="slide-6-trigger"] {
+    border-color: white
+}
+
+section.debit-card-slider .overlay {
+    position: relative;
+    z-index: 101;
+    padding: 60px 16px;
+    max-height: 982px;
+    max-width: 375px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .overlay {
+        padding:152px 60px 70px;
+        max-width: unset
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .overlay {
+        padding:152px 60px 70px;
+        max-width: unset
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section.debit-card-slider .overlay {
+        padding:292px 60px 100px
+    }
+}
+
+section.debit-card-slider .overlay label {
+    border: solid 6px transparent;
+    border-radius: 50px;
+    line-height: 0
+}
+
+section.debit-card-slider .text-wrap {
+    margin-bottom: 451px;
+    max-width: 425px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .text-wrap {
+        margin-bottom:60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .text-wrap {
+        margin-bottom:60px
+    }
+}
+
+section.debit-card-slider h2,section.debit-card-slider p {
+    transition: color 1s ease-in-out
+}
+
+section.debit-card-slider .desktop-btn {
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .desktop-btn {
+        display:block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .desktop-btn {
+        display:block
+    }
+}
+
+section.debit-card-slider .mobile-btn {
+    display: block
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .mobile-btn {
+        display:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .mobile-btn {
+        display:none
+    }
+}
+
+section.debit-card-slider .desktop {
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .desktop {
+        display:inline-block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .desktop {
+        display:inline-block
+    }
+}
+
+section.debit-card-slider .mobile {
+    display: inline-block
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .mobile {
+        display:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .mobile {
+        display:none
+    }
+}
+
+section.debit-card-slider .thumbnails {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    max-width: 375px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-slider .thumbnails {
+        margin-bottom:0;
+        padding: 0;
+        margin-top: 111px;
+        max-width: 443px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-slider .thumbnails {
+        margin-bottom:0;
+        padding: 0;
+        margin-top: 111px;
+        max-width: 443px
+    }
+}
+
+section.debit-card-carousel .desktop {
+    display: none
+}
+
+@media screen and (min-width: 500px) {
+    section.debit-card-carousel .desktop {
+        display:inline-block
+    }
+
+    section.debit-card-carousel .mobile {
+        display: none
+    }
+}
+
+section.debit-card-carousel amp-base-carousel .card {
+    padding: 0 5px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 1s;
+    transition: opacity ease 0.3s
+}
+
+section.debit-card-carousel amp-base-carousel .card[data-active="true"] {
+    opacity: 1
+}
+
+section.debit-card-carousel amp-base-carousel .card.clicked {
+    animation-delay: 0s
+}
+
+@media screen and (min-width: 600px) {
+    section.debit-card-carousel amp-base-carousel .card {
+        padding:0 20px
+    }
+}
+
+section.debit-card-carousel .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+section.debit-card-carousel .center-container h1 {
+    text-align: center
+}
+
+@media screen and (min-width: 1440px) {
+    section.debit-card-carousel .center-container h1 {
+        font-size:36px;
+        line-height: 44.4px
+    }
+}
+
+section.debit-card-carousel .breadcrumb-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 265px;
+    width: 265px;
+    margin-bottom: 40px
+}
+
+section.debit-card-carousel .breadcrumb-container .breadcrumb {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 6px
+}
+
+section.debit-card-carousel .breadcrumb-container .breadcrumb[data-active="true"] {
+    background-color: transparent !important
+}
+
+section.debit-card-carousel .breadcrumb-container .breadcrumb::after {
+    content: '';
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    top: -10px;
+    display: block
+}
+
+section.debit-card-carousel .disclaimer-container {
+    background-color: #F3F4F5;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'soleil';
+    font-weight: 400
+}
+
+section.debit-card-carousel .disclaimer-container .disclaimer {
+    margin: 0 auto
+}
+
+section.debit-card-carousel .disclaimer-container.disclaimer-desktop {
+    display: none
+}
+
+section.debit-card-carousel .disclaimer-container.disclaimer-mobile {
+    display: block
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-carousel .disclaimer-container {
+        font-size:18px
+    }
+
+    section.debit-card-carousel .disclaimer-container.disclaimer-desktop {
+        display: block
+    }
+
+    section.debit-card-carousel .disclaimer-container.disclaimer-mobile {
+        display: none
+    }
+}
+
+section.debit-card-carousel-mini .desktop {
+    display: none
+}
+
+@media screen and (min-width: 500px) {
+    section.debit-card-carousel-mini .desktop {
+        display:inline-block
+    }
+
+    section.debit-card-carousel-mini .mobile {
+        display: none
+    }
+}
+
+section.debit-card-carousel-mini .carousel-half {
+    padding: 20px
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container .carouselPin {
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    width: 150px
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container amp-base-carousel .card {
+    padding: 30px;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 1s;
+    transition: opacity ease 0.3s
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container amp-base-carousel .card[data-active="true"] {
+    opacity: 1
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container amp-base-carousel .card amp-img:not(.carouselPin) {
+    margin: 40px auto
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container amp-base-carousel .card.clicked {
+    animation-delay: 0s
+}
+
+@media screen and (min-width: 600px) {
+    section.debit-card-carousel-mini .carousel-half .carousel-container amp-base-carousel .card {
+        padding:0 20px
+    }
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container .breadcrumb-container {
+    max-width: 50px;
+    width: 50px;
+    margin-bottom: 40px
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container .breadcrumb-container .breadcrumb {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container .breadcrumb-container .breadcrumb[data-active="true"] {
+    background-color: transparent !important
+}
+
+section.debit-card-carousel-mini .carousel-half .carousel-container .breadcrumb-container .breadcrumb::after {
+    content: '';
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    top: -10px;
+    display: block
+}
+
+section.debit-card-carousel-mini .copy-half {
+    padding: 0 40px;
+    color: #fff
+}
+
+section.debit-card-carousel-mini .copy-half p {
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 1024px) {
+    section.debit-card-carousel-mini .copy-half .btn-container {
+        justify-content:initial;
+        align-items: initial;
+        align-self: initial
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.debit-card-carousel-mini .copy-half .btn-container {
+        justify-content:initial;
+        align-items: initial;
+        align-self: initial
+    }
+}
+
+section.debit-card-carousel-mini .copy-half .btn-container .btn {
+    background-color: #1B0E3D;
+    width: initial;
+    padding: 14px 50px;
+    margin-bottom: 20px
+}
+
+section.hero-video {
+    margin-bottom: 0;
+    padding-top: 77px;
+    z-index: 100;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video {
+        padding-top:139px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video {
+        padding-top:139px
+    }
+}
+
+section.hero-video .bg-holder {
+    background: #FDCE61;
+    width: 100%;
+    height: 390px;
+    position: absolute;
+    top: 0;
+    border-radius: 0 0 25px 25px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .bg-holder {
+        height:460px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .bg-holder {
+        height:460px
+    }
+}
+
+section.hero-video .container {
+    position: relative;
+    z-index: 10
+}
+
+section.hero-video .content-wrapper {
+    padding-top: 40px;
+    margin-bottom: 66px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .content-wrapper {
+        padding-top:60px;
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .content-wrapper {
+        padding-top:60px;
+        margin-bottom: 100px
+    }
+}
+
+section.hero-video .content-wrapper h4 {
+    margin-bottom: 50px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .content-wrapper h4 {
+        margin-bottom:55px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .content-wrapper h4 {
+        margin-bottom:55px
+    }
+}
+
+section.hero-video .content-wrapper p {
+    max-width: 540px
+}
+
+section.hero-video .youtube {
+    padding: 0 16px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .youtube {
+        padding:0 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .youtube {
+        padding:0 60px
+    }
+}
+
+section.hero-video .video {
+    display: none;
+    max-width: 343px;
+    height: 343px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-image: url(https://cdn.Totta.com/site-furniture/amp-uk/images/skills/video-money-basics.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 25px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .video {
+        max-width:1312px;
+        height: 743px;
+        background-image: url(https://cdn.Totta.com/site-furniture/amp-uk/images/skills/video-money-basics-desktop.png)
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .video {
+        max-width:1312px;
+        height: 743px;
+        background-image: url(https://cdn.Totta.com/site-furniture/amp-uk/images/skills/video-money-basics-desktop.png)
+    }
+}
+
+section.hero-video .video .video-holder {
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+@media screen and (min-width: phone) {
+    section.hero-video .video .video-holder {
+        width:100%
+    }
+}
+
+section.hero-video .video .video-holder .play-btn {
+    position: relative;
+    top: 38.8%
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .video .video-holder .play-btn {
+        top:34.7%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .video .video-holder .play-btn {
+        top:34.7%
+    }
+}
+
+section.hero-video .video .video-holder h2 {
+    color: white;
+    padding-top: 16px;
+    max-width: 537px;
+    text-align: center
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .video .video-holder h2 {
+        padding-top:38px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .video .video-holder h2 {
+        padding-top:38px
+    }
+}
+
+section.hero-video .video .video-holder .close-right {
+    z-index: 100;
+    cursor: pointer
+}
+
+section.hero-video .video .video-holder .play-svg svg {
+    width: 78px;
+    height: 78px
+}
+
+@media screen and (min-width: 1024px) {
+    section.hero-video .video .video-holder .play-svg svg {
+        width:214px;
+        height: 214px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.hero-video .video .video-holder .play-svg svg {
+        width:214px;
+        height: 214px
+    }
+}
+
+section.hero-video .video .video-holder .play-svg svg:hover circle {
+    stroke: #FF5A5A
+}
+
+section.hero-video .video .video-holder .play-svg svg:hover path {
+    fill: #FF5A5A
+}
+
+section.hero-video .play-btn {
+    cursor: pointer
+}
+
+section.hero-video+amp-lightbox .lightbox {
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 72px 0
+}
+
+section.skills-learn {
+    background: linear-gradient(45.94deg, #FE5A60 -23.7%, #6B44F1 64.36%);
+    position: relative;
+    color: #fff;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn {
+        background:linear-gradient(45.35deg, #FE5A60 -24.13%, #6B44F1 63.03%)
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn {
+        background:linear-gradient(45.35deg, #FE5A60 -24.13%, #6B44F1 63.03%)
+    }
+}
+
+section.skills-learn .content-wrapper {
+    padding: 60px 0 60px;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn .content-wrapper {
+        padding:60px 0 60px;
+        border-radius: 25px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn .content-wrapper {
+        padding:60px 0 60px;
+        border-radius: 25px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn .copy-wrapper {
+        padding-left:60px;
+        margin-bottom: 0px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn .copy-wrapper {
+        padding-left:60px;
+        margin-bottom: 0px
+    }
+}
+
+section.skills-learn h2 {
+    max-width: 540px
+}
+
+section.skills-learn p,section.skills-learn ul {
+    margin-bottom: 40px;
+    max-width: 502px
+}
+
+section.skills-learn .img-holder {
+    max-width: 375px
+}
+
+section.skills-learn .img-holder.mobile {
+    display: block;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn .img-holder.mobile {
+        display:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn .img-holder.mobile {
+        display:none
+    }
+}
+
+section.skills-learn .img-holder.desktop {
+    display: none;
+    max-width: 722px
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn .img-holder.desktop {
+        display:block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn .img-holder.desktop {
+        display:block
+    }
+}
+
+section.skills-learn .reverse-all .img-holder.desktop {
+    margin-right: 0px;
+    margin-left: -60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.skills-learn .reverse-all .copy-wrapper {
+        padding-left:60px;
+        padding-right: 0px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.skills-learn .reverse-all .copy-wrapper {
+        padding-left:60px;
+        padding-right: 0px
+    }
+}
+
+section.numbered-list {
+    background: #F6F6F6;
+    overflow: hidden
+}
+
+section.numbered-list .content-wrapper {
+    padding: 75px 0 60px;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .content-wrapper {
+        padding:150px 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .content-wrapper {
+        padding:150px 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .half-section.right {
+        margin-left:auto
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .half-section.right {
+        margin-left:auto
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .half-section.left {
+        margin-right:50%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .half-section.left {
+        margin-right:50%
+    }
+}
+
+section.numbered-list .row-desktop.reverse {
+    position: relative
+}
+
+section.numbered-list .row-desktop:first-of-type .img-holder.desktop {
+    position: absolute;
+    max-width: 1018px;
+    width: 570px;
+    top: -225px;
+    left: -442px
+}
+
+section.numbered-list .row-desktop:first-of-type .resimg-holder.desktop {
+    position: absolute;
+    max-width: 710px;
+    top: -210px;
+    left: -302px
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .row-desktop:first-of-type .resimg-holder.desktop {
+        position:absolute;
+        max-width: 1018px;
+        top: -210px;
+        left: -442px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .row-desktop:first-of-type .resimg-holder.desktop {
+        position:absolute;
+        max-width: 1018px;
+        top: -210px;
+        left: -442px
+    }
+}
+
+section.numbered-list .half-section:nth-child(2).left {
+    margin: auto
+}
+
+section.numbered-list .row-desktop:first-of-type .img-holder.mobile {
+    position: absolute;
+    max-width: 570px;
+    width: 570px;
+    top: -130px;
+    left: -210px
+}
+
+section.numbered-list .reverse .img-holder.desktop,section.numbered-list .reverse .res-imgholder {
+    position: absolute;
+    max-width: 926px;
+    width: 65%;
+    height: auto;
+    right: -64px;
+    top: -49%
+}
+
+section.numbered-list .row-desktop:first-of-type {
+    padding-bottom: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .row-desktop:first-of-type {
+        padding-bottom:377px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .row-desktop:first-of-type {
+        padding-bottom:377px
+    }
+}
+
+section.numbered-list h3 {
+    margin-bottom: 40px
+}
+
+section.numbered-list ol {
+    list-style: none;
+    counter-reset: steps
+}
+
+section.numbered-list li {
+    display: flex;
+    counter-increment: steps;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px black
+}
+
+section.numbered-list li::before {
+    content: counter(steps, decimal-leading-zero);
+    margin-right: 60px
+}
+
+section.numbered-list li:last-child {
+    padding: 0;
+    margin: 0;
+    border-bottom: none
+}
+
+section.numbered-list .img-holder.badges {
+    max-width: 172px;
+    margin: 0 auto 40px 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.numbered-list .img-holder.badges {
+        max-width:296px;
+        margin-bottom: 80px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.numbered-list .img-holder.badges {
+        max-width:296px;
+        margin-bottom: 80px
+    }
+}
+
+section.numbered-list a:link,section.numbered-list a:visited {
+    color: #FF5A5A
+}
+
+section.card-gallery {
+    background: linear-gradient(61.01deg, #FDAD50 13.36%, #FCEA4F 106.91%);
+    color: #1B0E3D;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0
+}
+
+section.card-gallery:nth-of-type(3) {
+    background: linear-gradient(243.06deg, #00866E 14.47%, #0AB8CF 108.74%);
+    color: #fff;
+    z-index: 9
+}
+
+section.card-gallery:nth-of-type(4) {
+    background: linear-gradient(63.26deg, #5756E6 7.09%, #007CC4 90.86%);
+    color: #fff;
+    z-index: 8
+}
+
+section.card-gallery:nth-of-type(5) {
+    background: linear-gradient(231.81deg, #FD87A0 6.5%, #CA3670 88.47%);
+    color: #fff;
+    margin-bottom: 100px;
+    z-index: 7
+}
+
+@media screen and (min-width: 1024px) {
+    section.card-gallery:nth-of-type(5) {
+        margin-bottom:150px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.card-gallery:nth-of-type(5) {
+        margin-bottom:150px
+    }
+}
+
+section.card-gallery:nth-of-type(n+3) .container {
+    padding-top: 60px
+}
+
+section.card-gallery .top-section {
+    padding-top: 418px;
+    padding-bottom: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.card-gallery .top-section {
+        padding-top:150px;
+        position: relative;
+        padding-bottom: 110px;
+        min-height: 617px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.card-gallery .top-section {
+        padding-top:150px;
+        position: relative;
+        padding-bottom: 110px;
+        min-height: 617px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.card-gallery .top-section .half-section {
+        margin-left:50%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.card-gallery .top-section .half-section {
+        margin-left:50%
+    }
+}
+
+section.card-gallery .img-holder.desktop {
+    max-width: 899px;
+    width: 899px;
+    margin-left: -239px;
+    position: absolute;
+    top: -405px;
+    left: -151px
+}
+
+section.card-gallery .img-holder.mobile {
+    position: absolute;
+    max-width: 687px;
+    width: 687px;
+    top: -149px;
+    left: -310px
+}
+
+section.card-gallery .gallery-wrap {
+    padding-bottom: 60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.card-gallery .gallery-wrap {
+        padding-bottom:100px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.card-gallery .gallery-wrap {
+        padding-bottom:100px
+    }
+}
+
+section.card-gallery .gallery-wrap h3 {
+    padding: 0 16px
+}
+
+@media screen and (min-width: 1024px) {
+    section.card-gallery .gallery-wrap h3 {
+        padding:0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.card-gallery .gallery-wrap h3 {
+        padding:0
+    }
+}
+
+section.card-gallery .gallery-wrap .card {
+    text-align: center
+}
+
+section.img-w-text-wide .container {
+    padding: 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.img-w-text-wide .copy-wrapper {
+        padding:0 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.img-w-text-wide .copy-wrapper {
+        padding:0 60px
+    }
+}
+
+section.img-w-text-wide .img-holder {
+    max-width: 100%
+}
+
+section.img-w-text-wide .img-holder.mobile {
+    display: block;
+    margin-bottom: 60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.img-w-text-wide .img-holder.mobile {
+        display:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.img-w-text-wide .img-holder.mobile {
+        display:none
+    }
+}
+
+section.img-w-text-wide .img-holder.desktop {
+    display: none;
+    max-width: 1444px;
+    margin-bottom: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.img-w-text-wide .img-holder.desktop {
+        display:block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.img-w-text-wide .img-holder.desktop {
+        display:block
+    }
+}
+
+section.press-article {
+    background: linear-gradient(67.68deg, #3B17BA 16.82%, #04D4D4 102.68%);
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    margin-bottom: 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article {
+        background:linear-gradient(67.68deg, #3B17BA 16.82%, #04D4D4 102.68%)
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article {
+        background:linear-gradient(67.68deg, #3B17BA 16.82%, #04D4D4 102.68%)
+    }
+}
+
+section.press-article .content-wrapper {
+    padding: 60px 0 170px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article .content-wrapper {
+        padding:150px 0 377px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article .content-wrapper {
+        padding:150px 0 377px
+    }
+}
+
+section.press-article .magazine {
+    color: #fff;
+    text-decoration: underline
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article .magazine {
+        margin-bottom:20px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article .magazine {
+        margin-bottom:20px
+    }
+}
+
+section.press-article h2 {
+    margin-bottom: 40px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article h2 {
+        margin-bottom:20px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article h2 {
+        margin-bottom:20px
+    }
+}
+
+section.our-story {
+    background: #F6F6F6;
+    position: relative
+}
+
+section.our-story .content-wrapper {
+    position: relative;
+    padding: 60px 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.our-story .content-wrapper {
+        padding:100px 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.our-story .content-wrapper {
+        padding:100px 0
+    }
+}
+
+section.our-story .row-desktop {
+    position: relative;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.our-story .copy-wrapper {
+        max-width:545px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.our-story .copy-wrapper {
+        max-width:545px
+    }
+}
+
+section.our-story .img-holder.desktop {
+    padding-right: 60px
+}
+
+section.our-story .img-holder.mobile {
+    padding-bottom: 40px
+}
+
+section.our-story svg {
+    position: absolute;
+    width: 668px;
+    height: auto;
+    top: -130px;
+    right: 0;
+    left: 16px
+}
+
+@media screen and (min-width: 1024px) {
+    section.our-story svg {
+        width:auto;
+        top: -240px;
+        right: -662px;
+        left: unset
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.our-story svg {
+        width:auto;
+        top: -240px;
+        right: -662px;
+        left: unset
+    }
+}
+
+section.press-article-2 {
+    background: #F6F6F6;
+    margin-top: -70px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article-2 {
+        margin-top:-224px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article-2 {
+        margin-top:-224px
+    }
+}
+
+section.press-article-2 .half-section {
+    margin-bottom: 40px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article-2 .half-section {
+        padding:0 60px;
+        margin-bottom: 80px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article-2 .half-section {
+        padding:0 60px;
+        margin-bottom: 80px
+    }
+}
+
+section.press-article-2 .img-holder {
+    z-index: 15
+}
+
+section.press-article-2 .img-holder.desktop {
+    margin-bottom: 30px
+}
+
+section.press-article-2 .magazine {
+    color: #1B0E3D;
+    text-decoration: underline
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article-2 .magazine {
+        margin-bottom:20px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article-2 .magazine {
+        margin-bottom:20px
+    }
+}
+
+section.press-article-2 .btn {
+    margin-bottom: 40px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-article-2 .btn {
+        margin-bottom:100px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-article-2 .btn {
+        margin-bottom:100px
+    }
+}
+
+section.press-kit {
+    background: #F7F7F7;
+    overflow: hidden
+}
+
+section.press-kit .container {
+    padding: 60px 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-kit .container {
+        padding:100px 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-kit .container {
+        padding:100px 0
+    }
+}
+
+section.press-kit .content-wrapper {
+    position: relative
+}
+
+section.press-kit .copy-wrapper {
+    position: relative;
+    z-index: 10
+}
+
+section.press-kit h2 {
+    margin-bottom: 40px
+}
+
+section.press-kit .kit-wrapper {
+    max-width: 900px;
+    margin-bottom: 40px
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-kit .kit-wrapper {
+        margin-bottom:90px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-kit .kit-wrapper {
+        margin-bottom:90px
+    }
+}
+
+section.press-kit .kit-item {
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: #fff;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-kit .kit-item {
+        max-width:290px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-kit .kit-item {
+        max-width:290px
+    }
+}
+
+section.press-kit a {
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.253)
+}
+
+section.press-kit h4 {
+    margin: 0;
+    line-height: 34.5px;
+    color: #1B0E3D
+}
+
+section.press-kit a:hover {
+    background: #FF5A5A
+}
+
+section.press-kit a:hover h4 {
+    color: #fff
+}
+
+section.press-kit a:hover path {
+    stroke: #fff
+}
+
+section.press-kit .img-holder {
+    max-width: 295px;
+    position: relative;
+    left: -16px;
+    margin-bottom: 185px;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-kit .img-holder {
+        max-width:640px;
+        left: -240px;
+        margin-bottom: 137px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-kit .img-holder {
+        max-width:640px;
+        left: -240px;
+        margin-bottom: 137px
+    }
+}
+
+section.press-kit .content-wrapper>svg {
+    position: absolute;
+    top: -1361px;
+    left: -1350px;
+    z-index: 1;
+    width: 2700px;
+    height: auto
+}
+
+@media screen and (min-width: 1024px) {
+    section.press-kit .content-wrapper>svg {
+        top:-2192px;
+        left: -1388px;
+        width: auto
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.press-kit .content-wrapper>svg {
+        top:-2192px;
+        left: -1388px;
+        width: auto
+    }
+}
+
+section.press-kit p {
+    text-align: center;
+    max-width: 609px;
+    margin-bottom: 40px
+}
+
+section.members.background {
+    background: linear-gradient(225deg, #FF5A5A 18.25%, #DC57B2 82.75%);
+    height: 1368px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.members.background {
+        height:1208px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members.background {
+        height:1208px
+    }
+}
+
+section.members.content {
+    background: #F3F4F5;
+    position: relative
+}
+
+section.members.content .container {
+    position: relative;
+    margin-top: -1180px
+}
+
+@media screen and (min-width: 1024px) {
+    section.members.content .container {
+        margin-top:-1020px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members.content .container {
+        margin-top:-1020px
+    }
+}
+
+section.members.content .content-wrapper {
+    padding-top: 100px;
+    position: relative;
+    z-index: 20
+}
+
+@media screen and (min-width: 1024px) {
+    section.members.content .content-wrapper {
+        padding-top:150px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members.content .content-wrapper {
+        padding-top:150px
+    }
+}
+
+section.members .row-desktop {
+    align-items: center;
+    justify-content: center
+}
+
+@media screen and (min-width: 1024px) {
+    section.members .row-desktop {
+        justify-content:space-between
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members .row-desktop {
+        justify-content:space-between
+    }
+}
+
+section.members .top {
+    margin-bottom: 100px
+}
+
+section.members .top h2 {
+    max-width: 600px;
+    margin-bottom: 100px;
+    color: #fff
+}
+
+section.members .top .img-holder {
+    max-width: 600px;
+    margin: 0 0 60px 0
+}
+
+@media screen and (min-width: 1024px) {
+    section.members .top .img-holder {
+        width:46%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members .top .img-holder {
+        width:46%
+    }
+}
+
+section.members .top .img-holder amp-img {
+    border-radius: 25px
+}
+
+section.members .bottom h2 {
+    margin: 0 auto 150px;
+    max-width: 1176px
+}
+
+section.members .bottom .centered {
+    text-align: center
+}
+
+section.members .bottom .centered .stars {
+    margin-bottom: 10px
+}
+
+section.members .bottom .centered p {
+    margin-bottom: 20px
+}
+
+section.members svg.bg {
+    position: absolute;
+    bottom: 482px;
+    left: -1081px
+}
+
+@media screen and (min-width: 1024px) {
+    section.members svg.bg {
+        bottom:-405px;
+        left: -780px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members svg.bg {
+        bottom:-405px;
+        left: -780px
+    }
+}
+
+section.members .card {
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    max-width: 600px;
+    padding: 40px;
+    margin: 0;
+    margin-bottom: 60px;
+    min-height: 420px
+}
+
+@media screen and (min-width: 1024px) {
+    section.members .card {
+        max-width:481px;
+        max-width: 600px;
+        width: 46%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.members .card {
+        max-width:481px;
+        max-width: 600px;
+        width: 46%
+    }
+}
+
+section.members .card .person {
+    font-size: 21px;
+    line-height: 21px;
+    font-family: 'buenosaires';
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.5);
+    margin-bottom: 40px
+}
+
+section.members .card .quote,section.members .card .date {
+    font-size: 16px;
+    line-height: 26px
+}
+
+section.members .card .quote {
+    margin-bottom: 20px
+}
+
+section.members .card .source {
+    opacity: 0.6
+}
+
+section.members .card .sprite-image.stars-5,section.members .card .sprite-image.stars-4 {
+    margin-bottom: 20px;
+    padding-bottom: 20px
+}
+
+section.error {
+    margin: 0;
+    background: #F6F6F6;
+    padding: 40px 0 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.error .row-desktop {
+        align-items:center
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.error .row-desktop {
+        align-items:center
+    }
+}
+
+section.error .img-holder {
+    margin: 0 auto;
+    padding: 0 16px;
+    margin-bottom: 60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.error .img-holder {
+        max-width:648px;
+        margin-left: -60px;
+        margin-right: 120px;
+        padding: 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.error .img-holder {
+        max-width:648px;
+        margin-left: -60px;
+        margin-right: 120px;
+        padding: 0
+    }
+}
+
+section.error .img-holder amp-img {
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    section.error .copy-wrapper {
+        max-width:50%;
+        width: 100%;
+        padding-left: 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.error .copy-wrapper {
+        max-width:50%;
+        width: 100%;
+        padding-left: 60px
+    }
+}
+
+section.error p {
+    margin-bottom: 40px;
+    padding-right: 55px
+}
+
+@media screen and (min-width: 1024px) {
+    section.error p {
+        margin-bottom:60px;
+        max-width: 438px;
+        padding-right: 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.error p {
+        margin-bottom:60px;
+        max-width: 438px;
+        padding-right: 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.error .btn {
+        max-width:360px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.error .btn {
+        max-width:360px
+    }
+}
+
+body[amp-x-error-image="img1"] section.error .img-holder .img1 {
+    display: block
+}
+
+body[amp-x-error-image="img2"] section.error .img-holder .img2 {
+    display: block
+}
+
+body[amp-x-error-image="img3"] section.error .img-holder .img3 {
+    display: block
+}
+
+body[amp-x-error-image="img4"] section.error .img-holder .img4 {
+    display: block
+}
+
+section.giftlinks-1 {
+    background: linear-gradient(45.35deg, #FE5A60 -24.13%, #6B44F1 63.03%);
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0
+}
+
+section.giftlinks-1 .content-wrapper {
+    padding: 100px 0 60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .content-wrapper {
+        padding:100px 0 150px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .content-wrapper {
+        padding:100px 0 150px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .row-desktop {
+        align-items:center
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .row-desktop {
+        align-items:center
+    }
+}
+
+section.giftlinks-1 .gif-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 54px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper {
+        width:50%;
+        padding-right: 60px;
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper {
+        width:50%;
+        padding-right: 60px;
+        margin-bottom: 0
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .gif-holder {
+    width: 100%;
+    max-width: 169px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper .gif-holder {
+        max-width:301px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper .gif-holder {
+        max-width:301px
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .money {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 59px;
+    margin-top: -22px;
+    position: relative;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper .money {
+        font-size:80px;
+        line-height: 105px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper .money {
+        font-size:80px;
+        line-height: 105px
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .from {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper .from {
+        font-size:30px;
+        line-height: 40px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper .from {
+        font-size:30px;
+        line-height: 40px
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .date {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 28px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper .date {
+        font-size:30px;
+        line-height: 40px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper .date {
+        font-size:30px;
+        line-height: 40px
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .btn {
+    max-width: 186px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .gif-wrapper .btn {
+        max-width:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .gif-wrapper .btn {
+        max-width:none
+    }
+}
+
+section.giftlinks-1 .gif-wrapper .btn:hover {
+    background: #FF5A5A;
+    cursor: default
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .copy-wrapper {
+        width:50%;
+        padding-left: 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .copy-wrapper {
+        width:50%;
+        padding-left: 60px
+    }
+}
+
+section.giftlinks-1 svg {
+    position: absolute
+}
+
+section.giftlinks-1 svg#faf-heart {
+    width: 80px;
+    top: -50px;
+    right: -25px;
+    z-index: 20
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 svg#faf-heart {
+        width:auto;
+        right: -40px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 svg#faf-heart {
+        width:auto;
+        right: -40px
+    }
+}
+
+section.giftlinks-1 svg#faf-stars {
+    width: 100px;
+    right: -77px;
+    top: 40px;
+    z-index: 20
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 svg#faf-stars {
+        width:auto;
+        top: 160px;
+        right: -142px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 svg#faf-stars {
+        width:auto;
+        top: 160px;
+        right: -142px
+    }
+}
+
+section.giftlinks-1 svg#faf-circle {
+    width: 343px;
+    height: 343px;
+    top: 10px;
+    left: -59px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 svg#faf-circle {
+        width:auto;
+        height: auto;
+        top: 10px;
+        left: -100px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 svg#faf-circle {
+        width:auto;
+        height: auto;
+        top: 10px;
+        left: -100px
+    }
+}
+
+section.giftlinks-1 .card {
+    max-width: 230px;
+    margin: 0 auto;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .card {
+        max-width:400px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .card {
+        max-width:400px
+    }
+}
+
+section.giftlinks-1 .card .inner {
+    background: #6236FF;
+    padding: 5px 0 23px;
+    position: relative;
+    border-radius: 17px;
+    z-index: 10
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-1 .card .inner {
+        border-radius:30px;
+        padding: 5px 0 23px;
+        padding: 10px 0 40px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-1 .card .inner {
+        border-radius:30px;
+        padding: 5px 0 23px;
+        padding: 10px 0 40px
+    }
+}
+
+section.giftlinks-2 {
+    background: #F6F6F6;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 {
+        margin-bottom:60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 {
+        margin-bottom:60px
+    }
+}
+
+section.giftlinks-2.last {
+    margin-bottom: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2.last {
+        margin-bottom:150px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2.last {
+        margin-bottom:150px
+    }
+}
+
+section.giftlinks-2 .container {
+    padding: 100px 0 60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .container {
+        padding:150px 0 80px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .container {
+        padding:150px 0 80px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .row-desktop {
+        flex-direction:row-reverse;
+        align-items: center
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .row-desktop {
+        flex-direction:row-reverse;
+        align-items: center
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .copy-wrapper {
+        width:50%;
+        padding: 0 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .copy-wrapper {
+        width:50%;
+        padding: 0 60px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-wrapper {
+        width:50%
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-wrapper {
+        width:50%
+    }
+}
+
+section.giftlinks-2 .iphone {
+    max-width: 205px;
+    margin: 0 auto;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .iphone {
+        max-width:445px;
+        right: 78px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .iphone {
+        max-width:445px;
+        right: 78px
+    }
+}
+
+section.giftlinks-2 .iphone.two {
+    max-width: 205px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .iphone.two {
+        max-width:456px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .iphone.two {
+        max-width:456px
+    }
+}
+
+section.giftlinks-2 .img-holder {
+    max-width: 205px;
+    position: relative
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .img-holder {
+        max-width:445px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .img-holder {
+        max-width:445px
+    }
+}
+
+section.giftlinks-2 .gif-holder {
+    position: absolute;
+    width: 100%
+}
+
+section.giftlinks-2 .gif-holder amp-anim,section.giftlinks-2 .gif-holder amp-img {
+    border-radius: 12px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder amp-anim,section.giftlinks-2 .gif-holder amp-img {
+        border-radius:25px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder amp-anim,section.giftlinks-2 .gif-holder amp-img {
+        border-radius:25px
+    }
+}
+
+section.giftlinks-2 .gif-holder.hug {
+    max-width: 151px;
+    top: 38px;
+    left: 31px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.hug {
+        top:82px;
+        left: 68px;
+        max-width: 328px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.hug {
+        top:82px;
+        left: 68px;
+        max-width: 328px
+    }
+}
+
+section.giftlinks-2 .gif-holder.pineapple {
+    max-width: 105px;
+    top: 206px;
+    left: -60px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.pineapple {
+        max-width:230px;
+        top: 430px;
+        left: -130px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.pineapple {
+        max-width:230px;
+        top: 430px;
+        left: -130px
+    }
+}
+
+section.giftlinks-2 .gif-holder.hedgehog {
+    max-width: 105px;
+    top: 206px;
+    right: -69px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.hedgehog {
+        max-width:230px;
+        top: 430px;
+        right: -146px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.hedgehog {
+        max-width:230px;
+        top: 430px;
+        right: -146px
+    }
+}
+
+section.giftlinks-2 .gif-holder.bird {
+    max-width: 82px;
+    top: 110px;
+    right: -59px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.bird {
+        max-width:180px;
+        top: 227px;
+        right: -115px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.bird {
+        max-width:180px;
+        top: 227px;
+        right: -115px
+    }
+}
+
+section.giftlinks-2 .gif-holder.tooth {
+    max-width: 90px;
+    top: 110px;
+    right: -55px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.tooth {
+        max-width:207px;
+        top: 227px;
+        right: -130px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.tooth {
+        max-width:207px;
+        top: 227px;
+        right: -130px
+    }
+}
+
+section.giftlinks-2 .gif-holder.trophy {
+    max-width: 95px;
+    top: 204px;
+    right: -57px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.trophy {
+        max-width:220px;
+        top: 439px;
+        right: -138px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.trophy {
+        max-width:220px;
+        top: 439px;
+        right: -138px
+    }
+}
+
+section.giftlinks-2 .gif-holder.cupcake {
+    max-width: 152px;
+    top: 45px;
+    left: 33px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.cupcake {
+        max-width:330px;
+        top: 110px;
+        left: 76px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.cupcake {
+        max-width:330px;
+        top: 110px;
+        left: 76px
+    }
+}
+
+section.giftlinks-2 .gif-holder.dog {
+    max-width: 100px;
+    top: 145px;
+    left: -30px;
+    padding: 4px;
+    border-radius: 12px;
+    background: #FFF5DF
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.dog {
+        max-width:220px;
+        top: 330px;
+        left: -65px;
+        padding: 17px;
+        border-radius: 25px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.dog {
+        max-width:220px;
+        top: 330px;
+        left: -65px;
+        padding: 17px;
+        border-radius: 25px
+    }
+}
+
+section.giftlinks-2 .gif-holder.donut {
+    position: relative;
+    max-width: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .gif-holder.donut {
+        max-width:213px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .gif-holder.donut {
+        max-width:213px
+    }
+}
+
+section.giftlinks-2 svg {
+    position: absolute;
+    top: 30px;
+    left: -150px;
+    z-index: -1
+}
+
+section.giftlinks-2 svg#faf-circle-2 {
+    width: 344px;
+    height: 344px;
+    top: 20px;
+    left: -66px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 svg#faf-circle-2 {
+        width:auto;
+        height: auto;
+        top: 30px;
+        left: -150px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 svg#faf-circle-2 {
+        width:auto;
+        height: auto;
+        top: 30px;
+        left: -150px
+    }
+}
+
+section.giftlinks-2 svg#faf-circle-3 {
+    width: 414px;
+    height: 414px;
+    top: -4px;
+    left: -88px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 svg#faf-circle-3 {
+        width:auto;
+        height: auto;
+        top: -28px;
+        left: -170px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 svg#faf-circle-3 {
+        width:auto;
+        height: auto;
+        top: -28px;
+        left: -170px
+    }
+}
+
+section.giftlinks-2 svg#faf-circle-4 {
+    width: 460px;
+    height: 460px;
+    top: -32px;
+    left: -108px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 svg#faf-circle-4 {
+        width:auto;
+        height: auto;
+        top: -100px;
+        left: -250px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 svg#faf-circle-4 {
+        width:auto;
+        height: auto;
+        top: -100px;
+        left: -250px
+    }
+}
+
+section.giftlinks-2 .card {
+    position: absolute;
+    background: #6B28FF;
+    color: #fff;
+    width: 120px;
+    top: 130px;
+    right: -74px;
+    padding-bottom: 10px;
+    border-radius: 12px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .card {
+        width:287px;
+        top: 272px;
+        right: -185px;
+        padding-bottom: 28px;
+        border-radius: 25px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .card {
+        width:287px;
+        top: 272px;
+        right: -185px;
+        padding-bottom: 28px;
+        border-radius: 25px
+    }
+}
+
+section.giftlinks-2 .card .money {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 600
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .card .money {
+        font-size:56px;
+        line-height: 73px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .card .money {
+        font-size:56px;
+        line-height: 73px
+    }
+}
+
+section.giftlinks-2 .card .from {
+    font-size: 9px;
+    line-height: 14px;
+    font-weight: 600
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .card .from {
+        font-size:21px;
+        line-height: 28px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .card .from {
+        font-size:21px;
+        line-height: 28px
+    }
+}
+
+section.giftlinks-2 .card .date {
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 10px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .card .date {
+        font-size:21px;
+        line-height: 28px;
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .card .date {
+        font-size:21px;
+        line-height: 28px;
+        margin-bottom: 20px
+    }
+}
+
+section.giftlinks-2 .card .btn {
+    font-size: 9px;
+    line-height: 10px;
+    width: auto;
+    padding: 7px 15px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .card .btn {
+        font-size:12px;
+        line-height: 16px;
+        padding: 14px 63px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .card .btn {
+        font-size:12px;
+        line-height: 16px;
+        padding: 14px 63px
+    }
+}
+
+section.giftlinks-2 .card .btn:hover {
+    cursor: default;
+    background: #FF5A5A
+}
+
+section.giftlinks-2 h3 {
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 h3 {
+        margin-bottom:40px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 h3 {
+        margin-bottom:40px
+    }
+}
+
+section.giftlinks-2 ul {
+    max-width: 439px
+}
+
+section.giftlinks-2 li {
+    margin-bottom: 10px
+}
+
+section.giftlinks-2 .carousel-preview {
+    max-width: 450px
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 .carousel-preview {
+        padding:0 60px;
+        margin-top: -80px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 .carousel-preview {
+        padding:0 60px;
+        margin-top: -80px
+    }
+}
+
+section.giftlinks-2 .carousel-preview button {
+    font-size: 0;
+    line-height: 0
+}
+
+section.giftlinks-2 .carousel-preview amp-img {
+    border-radius: 50px
+}
+
+section.giftlinks-2 h3.title {
+    text-align: right;
+    padding-right: 16px;
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    section.giftlinks-2 h3.title {
+        padding-right:60px;
+        margin-top: 50px;
+        display: block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.giftlinks-2 h3.title {
+        padding-right:60px;
+        margin-top: 50px;
+        display: block
+    }
+}
+
+section.text {
+    background: #F6F6F6;
+    text-align: center;
+    position: relative
+}
+
+section.text .content-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+@media screen and (min-width: 1024px) {
+    section.text .content-wrapper {
+        padding-top:165px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.text .content-wrapper {
+        padding-top:165px
+    }
+}
+
+section.text h2 {
+    max-width: 910px;
+    margin: 0 auto 20px
+}
+
+section.text .btn {
+    margin-top: 30px
+}
+
+@media screen and (min-width: 1024px) {
+    section.text .btn {
+        margin-top:50px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.text .btn {
+        margin-top:50px
+    }
+}
+
+section.referrals {
+    background: linear-gradient(10.57deg, #3B17BA 1.45%, #04D4D4 120.42%);
+    color: #fff;
+    padding: 70px 0 60px;
+    border-radius: 0 0 25px 25px
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals {
+        background:linear-gradient(67.68deg, #3B17BA 16.82%, #04D4D4 102.68%);
+        padding: 94px 0 70px 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals {
+        background:linear-gradient(67.68deg, #3B17BA 16.82%, #04D4D4 102.68%);
+        padding: 94px 0 70px 0
+    }
+}
+
+section.referrals .img-holder {
+    padding: 0 9.1% 0 1.4%
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals .img-holder {
+        padding:0 3.1% 0 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals .img-holder {
+        padding:0 3.1% 0 0
+    }
+}
+
+section.referrals .copy-wrapper {
+    width: 100%
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals .copy-wrapper {
+        width:63%;
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals .copy-wrapper {
+        width:63%;
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+section.referrals p.subtext a:link,section.referrals a:visited {
+    color: #ffffff;
+    text-decoration: underline
+}
+
+section.referrals p {
+    margin-bottom: 40px
+}
+
+section.referrals .btn {
+    width: 100%;
+    padding: 13px 0;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals .btn {
+        max-width:361px;
+        padding: 30px 0
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals .btn {
+        max-width:361px;
+        padding: 30px 0
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals .btn.mobile {
+        display:none
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals .btn.mobile {
+        display:none
+    }
+}
+
+section.referrals .btn.desktop {
+    display: none
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals .btn.desktop {
+        display:inline-block
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals .btn.desktop {
+        display:inline-block
+    }
+}
+
+section.referrals p.subtext {
+    text-align: center;
+    margin-bottom: 45px
+}
+
+@media screen and (min-width: 1024px) {
+    section.referrals p.subtext {
+        margin-bottom:0;
+        max-width: 361px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    section.referrals p.subtext {
+        margin-bottom:0;
+        max-width: 361px
+    }
+}
+
+section.bgr-light-grey {
+    margin-bottom: 0
+}
+
+section.bgr-light-grey p {
+    font-size: 16px
+}
+
+section.middle-center .btn-large {
+    padding: 18px
+}
+
+form.email-signup {
+    column-gap: 22px;
+    row-gap: 8px
+}
+
+form.email-signup [class|="form"]:not([class*="submit"]) {
+    flex: 1 1 auto
+}
+
+form.email-signup [class|="form"][class*="submit"] {
+    min-width: 200px
+}
+
+form.email-signup input:not([type=submit]) {
+    background: white;
+    color: #1B0E3D;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 45px;
+    height: 48px
+}
+
+@media screen and (min-width: 1024px) {
+    form.email-signup input:not([type=submit]) {
+        font-size:20px;
+        line-height: 1.3;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    form.email-signup input:not([type=submit]) {
+        font-size:20px;
+        line-height: 1.3;
+        height: 80px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+form.email-signup input:not([type=submit])::-webkit-input-placeholder,form.email-signup input:not([type=submit]):-ms-input-placeholder,form.email-signup input:not([type=submit])::placeholder {
+    color: #1B0E3D
+}
+
+form.email-signup button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 18px;
+    background: #FF5A5A;
+    color: white;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 100%;
+    height: 48px
+}
+
+@media screen and (min-width: 1024px) {
+    form.email-signup button {
+        font-size:20px;
+        line-height: 1.3;
+        height: 80px
+    }
+}
+
+@media screen and (min-width: desktop) {
+    form.email-signup button {
+        font-size:20px;
+        line-height: 1.3;
+        height: 80px
+    }
+}
+
+form.email-signup button:hover {
+    background: #e64650
+}
+
+header.nav-bar .tab a,header.nav-bar .tab span {
+    color: #fff
+}
+
+header.nav-bar .tab svg path {
+    stroke: #fff
+}
+
+header.nav-bar #menu-logo path.change {
+    fill: #fff
+}
+
+header.nav-bar .layout-row {
+    min-height: 38px
+}
+
+.hamburger span {
+    background: #fff
+}
+
+@media screen and (min-width: 1024px) {
+    .content>section {
+        margin-bottom:50px
+    }
+}
+
+section.home-hero {
+    background-color: #6334ff;
+    margin-bottom: 50px;
+    padding-top: 80px
+}
+
+section.home-hero .hero-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+section.home-hero .heroimg {
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 25px 25px;
+    object-position: 0 60px
+}
+
+section.home-hero h1 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto
+}
+
+section.home-hero p.subtext {
+    color: #fff;
+    line-height: 24px;
+    max-width: 263px;
+    margin: 0 auto 147px auto;
+    text-align: center
+}
+
+section.home-hero div.btn-wrap {
+    transform: translateY(150px);
+    width: 70%;
+    margin: 0 auto
+}
+
+section.home-hero .btn-primary {
+    margin: 0 auto
+}
+
+section.home-hero .cta-subtext {
+    display: none
+}
+
+section.home-hero .resimg {
+    position: relative;
+    z-index: 2
+}
+
+section.home-hero .gradient-container {
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0 0 25px 25px;
+    height: 420px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 50%)
+}
+
+@media screen and (min-width: 400px) {
+    section.home-hero .heroimg {
+        object-position:0 40px
+    }
+
+    section.home-hero h1 {
+        font-size: 36px;
+        line-height: 40px
+    }
+
+    section.home-hero .btn-wrap {
+        transform: translateY(160px)
+    }
+}
+
+@media screen and (min-width: 450px) {
+    section.home-hero .heroimg {
+        object-position:0 0px
+    }
+}
+
+@media screen and (min-width: 530px) {
+    section.home-hero .heroimg {
+        object-position:0 -60px
+    }
+}
+
+@media screen and (min-width: 600px) {
+    section.home-hero .heroimg {
+        object-position:0 -100px
+    }
+}
+
+@media screen and (min-width: 670px) {
+    section.home-hero h1 {
+        text-align:left;
+        margin: 0 0 30px 0
+    }
+
+    section.home-hero p.subtext {
+        text-align: left;
+        margin: 0 0 147px 0
+    }
+}
+
+@media screen and (min-width: 740px) {
+    section.home-hero div.btn-wrap {
+        transform:translateY(0px)
+    }
+
+    section.home-hero .heroimg {
+        object-position: 0px 0px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.home-hero {
+        padding-top:150px
+    }
+
+    section.home-hero h1 {
+        margin-top: 30px;
+        font-size: 56px;
+        line-height: 66px;
+        max-width: 540px
+    }
+
+    section.home-hero .heroimg {
+        object-position: -100px 0px
+    }
+
+    section.home-hero p.subtext {
+        margin-bottom: 30px;
+        max-width: 385px;
+        font-size: 22px;
+        line-height: 31px
+    }
+
+    section.home-hero div.btn-wrap {
+        transform: translateY(0px);
+        margin: 0;
+        width: initial
+    }
+
+    section.home-hero div.btn-wrap .cta-subtext {
+        color: #000
+    }
+
+    section.home-hero div.btn-wrap .cta-subtext svg .text {
+        fill: #000
+    }
+
+    section.home-hero .gradient-container {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    section.home-hero .heroimg {
+        object-position:0 0
+    }
+}
+
+div.below-hero {
+    display: none
+}
+
+section.img-w-text:nth-of-type(2) .img-holder.mobile {
+    display: none
+}
+
+section.img-w-text:nth-of-type(6) ul {
+    margin-bottom: 20px
+}
+
+section.img-w-text:nth-of-type(6) ul li {
+    margin-bottom: 5px
+}
+
+section.img-w-text:nth-of-type(8) {
+    background-color: #1B0E3D;
+    padding: 30px 0
+}
+
+section.img-w-text:nth-of-type(8) h2 {
+    color: #fff
+}
+
+@media screen and (min-width: 1024px) {
+    section.img-w-text:nth-of-type(8) h2 {
+        max-width:300px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section.img-w-text:nth-of-type(8) h2 {
+        max-width:440px
+    }
+}
+
+section.img-w-text:nth-of-type(8) p {
+    color: #fff
+}
+
+section.img-w-text:nth-of-type(8) .img-holder.mobile {
+    max-width: 70%
+}
+
+section.img-w-text:nth-of-type(8) .img-holder.desktop {
+    max-width: 465px
+}
+
+section.debit-card-carousel:nth-of-type(4) {
+    background-color: #EBF8FF;
+    padding: 60px 0
+}
+
+section.debit-card-carousel:nth-of-type(4) .disclaimer-container {
+    display: none
+}
+
+section.debit-card-carousel:nth-of-type(4) h1 {
+    max-width: 290px
+}
+
+@media screen and (min-width: 700px) {
+    section.debit-card-carousel:nth-of-type(4) h1 {
+        max-width:560px
+    }
+}
+
+section.debit-card-carousel:nth-of-type(4) amp-img {
+    border-radius: 25px
+}
+
+section.icon-grid:nth-of-type(5) {
+    background-color: #1B0E3D
+}
+
+section.icon-grid:nth-of-type(5) .icon-grid-title {
+    color: #fff;
+    text-align: left
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid:nth-of-type(5) .icon-grid-title {
+        max-width:440px
+    }
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid:nth-of-type(5) .icon-grid-title {
+        max-width:680px;
+        text-align: center
+    }
+}
+
+section.icon-grid:nth-of-type(5) .icon-grid-subtitle {
+    color: #fff;
+    font-family: 'soleil';
+    max-width: 360px;
+    text-align: left
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid:nth-of-type(5) .icon-grid-subtitle {
+        text-align:center;
+        max-width: 680px
+    }
+}
+
+section.icon-grid:nth-of-type(5) .btn {
+    background-color: #fff;
+    color: #000
+}
+
+@media screen and (max-width: 1024px) {
+    section.icon-grid:nth-of-type(5) .grid-card amp-img {
+        max-width:120px;
+        max-height: 120px;
+        aspect-ratio: 1/1;
+        flex-basis: 120px;
+        flex-shrink: 0
+    }
+
+    section.icon-grid:nth-of-type(5) .grid-card .card-content {
+        margin-right: 0 !important;
+        height: 120px
+    }
+
+    section.icon-grid:nth-of-type(5) .grid-card .card-content h2 {
+        color: #fff;
+        margin-bottom: 5px !important
+    }
+
+    section.icon-grid:nth-of-type(5) .grid-card .card-content p {
+        color: #CDCBD4
+    }
+
+    section.icon-grid:nth-of-type(5) .grid-card .card-content p a {
+        color: #CDCBD4;
+        text-decoration: underline
+    }
+}
+
+section.icon-grid:nth-of-type(9) {
+    background-color: #FFEEF2
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-title {
+    color: #1B0E3D;
+    font-weight: normal
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-subtitle {
+    color: #1B0E3D;
+    font-family: 'soleil';
+    max-width: 360px
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid:nth-of-type(9) .icon-grid-subtitle {
+        text-align:center;
+        max-width: 750px
+    }
+}
+
+section.icon-grid:nth-of-type(9) .grid-btn-container a {
+    background-color: #1B0E3D;
+    padding: 20px 70px
+}
+
+section.icon-grid:nth-of-type(9) .grid-heading-container {
+    margin: 0
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container {
+    margin-bottom: 0
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card {
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 210px;
+    background: #FFFFFF;
+    margin: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 31px;
+    aspect-ratio: initial;
+    align-items: center;
+    min-height: 265px
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card {
+        min-height:220px
+    }
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card .card-content {
+    margin: 0
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card .card-content p {
+    color: #1B0E3D;
+    font-size: 16px;
+    line-height: 19px
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card amp-img {
+    height: 55px;
+    border-radius: 0px;
+    box-shadow: none
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card:nth-of-type(1) amp-img {
+    width: 60px
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card:nth-of-type(2) amp-img {
+    width: 54px
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card:nth-of-type(3) amp-img {
+    width: 61px
+}
+
+section.icon-grid:nth-of-type(9) .icon-grid-container .grid-card:nth-of-type(4) amp-img {
+    width: 58px
+}
+
+section.icon-grid .icon-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (max-width: 1024px) {
+    section.icon-grid .icon-grid-container {
+        max-width:600px;
+        margin: 0 auto
+    }
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid .icon-grid-container {
+        flex-direction:row;
+        flex-wrap: wrap
+    }
+}
+
+@media screen and (min-width: 700px) {
+    section.icon-grid .icon-grid-container .grid-card {
+        max-width:250px;
+        min-height: 305px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.icon-grid .icon-grid-container .grid-card {
+        min-height:305px;
+        max-width: 300px
+    }
+}
+
+section.icon-grid .icon-grid-container .grid-card amp-img {
+    flex-basis: initial;
+    width: 100%;
+    height: auto;
+    margin: -1px 0px 15px 0px
+}
+
+section.icon-grid .icon-grid-container .grid-card .card-content {
+    margin: 0px 20px 0 20px;
+    flex-basis: initial
+}
+
+section.icon-grid .icon-grid-container .grid-card .card-content h2 {
+    font-size: 16px;
+    font-family: 'buenosaires-bold';
+    margin-bottom: 15px
+}
+
+section.icon-grid .grid-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px
+}
+
+section.resizable-grid:nth-of-type(7) {
+    background-color: #F4F4F4
+}
+
+section.resizable-grid:nth-of-type(7) .resizable-grid-subtitle {
+    max-width: 630px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card h2 {
+    font-size: 28px
+}
+
+@media screen and (min-width: 1024px) {
+    section.resizable-grid:nth-of-type(7) .grid-card h2 {
+        font-size:36px;
+        margin-bottom: 0px
+    }
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card p {
+    font-size: 15px;
+    line-height: 17px
+}
+
+@media screen and (min-width: 1024px) {
+    section.resizable-grid:nth-of-type(7) .grid-card p {
+        font-size:18px;
+        line-height: 20px
+    }
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(1) p {
+    max-width: 220px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(3) p {
+    max-width: 300px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(4) h2 {
+    color: #fff;
+    font-size: 25px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(4) p {
+    max-width: 580px;
+    color: #fff
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(4) a {
+    color: #fff;
+    text-decoration: underline
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(5) h2 {
+    font-size: 28px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-card:nth-of-type(5) p {
+    max-width: 200px
+}
+
+section.resizable-grid:nth-of-type(7) .grid-btn-container a {
+    padding: 15px 70px
+}
+
+section.accordion {
+    margin-bottom: 50px;
+    background-color: #F3F4F5;
+    padding: 30px 0
+}
+
+section.accordion h2 {
+    font-family: 'buenosaires-bold'
+}
+
+section.accordion p a {
+    white-space: unset;
+    display: inline
+}
+
+section.accordion p.subtext {
+    display: none
+}
+
+section.accordion .section-img {
+    display: none
+}
+
+section.accordion .half-section {
+    max-width: 100%
+}
+
+@media screen and (min-width: 1024px) {
+    section.accordion h2 {
+        text-align:center
+    }
+}
+
+header.nav-bar {
+    background: transparent;
+    transition: all 0.1s ease-in-out
+}
+
+header.nav-bar.scroll {
+    background: #fff
+}
+
+header.nav-bar.scroll .tab:hover>a {
+    color: #FF5A5A
+}
+
+header.nav-bar.scroll .tab:hover span {
+    color: #FF5A5A
+}
+
+header.nav-bar.scroll .tab:hover svg path {
+    stroke: #FF5A5A
+}
+
+header.nav-bar.scroll .tab a,header.nav-bar.scroll .tab span {
+    color: #1B0E3D
+}
+
+header.nav-bar.scroll .tab.active>a,header.nav-bar.scroll .tab.active>span {
+    color: #FF5A5A
+}
+
+header.nav-bar.scroll .tab svg path {
+    stroke: #1B0E3D
+}
+
+header.nav-bar.scroll #menu-signup {
+    background: #FF5A5A;
+    color: #fff
+}
+
+header.nav-bar.scroll #menu-signup:hover {
+    background: #e64650
+}
+
+header.nav-bar.scroll .hamburger span {
+    background: #1B0E3D
+}
+
+header.nav-bar.scroll #menu-logo path.change {
+    fill: #1B0E3D
+}
+
+.wrap {
+    margin: 0
+}
+form {
+    
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:20px;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color:tomato;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+
+  .container1 {
+    display: flex;
+    justify-content: space-around;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: powderblue;
+    border-radius:20px;
+  }
+.column1 {
+    flex:1;
+    padding:10px;
+    min-width: 150px;
+    background-color: paleturquoise;
+    margin:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius:20px;
+}
+.column h4 {
+    margin-top:0;
+
+}
+.column p{
+    margin: 5px 0;
+}
+.copy{
+    margin: 50px;
+}
+#achievements .jumbotron {
+    position: relative;
+    background-image: url("../images/winner.png");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+  }
+  #achievements .jumbotron h2 {
+    color: gold;
+  
+  }
+  #achievements .achievement-list {
+    padding: 20px 0;
+  }
+  
+  #achievements .achievement {
+    text-align: center;
+  }
+  
+  #achievements i {
+    padding: 10px;
+    font-size: 48px;
+    color: gold;
+    text-shadow: 0 0 5px gold;
+  }
+  
+  #achievements .achievement-number {
+    font-size: 22px;
+    color: gold;
+  }
+  
+  span.test1 {
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: gold;
+    text-decoration-line: overline underline;
+  }
+  
+  #achievements .achievement-text {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: gold;
+  
+  }
+  
+  
+  #contact .jumbotron {
+    position: relative;
+    background-image: url('../images/home-hero-de-new.webp');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  #contact .jumbotron h2 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #contact .jumbotron .underline {
+    background-color: #ccc;
+  }
+  
+  #contact .contact-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 9, 27, 0.75);
+    z-index: -10;
+  }
+  
+  #contact .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+  }
+  
+  #contact .contact-us .contact-item {
+    margin: 30px 0;
+  }
+  
+  #contact .contact-us .contact-item h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #contact .contact-us .contact-item .social-media {
+    font-size: 26px;
+  }
+  
+  #contact .contact-us .contact-item .social-media a {
+    padding: 10px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+  }
+  
+  #contact .contact-us .contact-item .social-media a:hover {
+    color: #ccc;
+  
+  
+  }
+  footer {
+    color: black;
+  }
+  
+  footer p {
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+  }
+  
+  @media (min-width: 375px) {
+    header h1 {
+      font-size: 36px;
+    }
+    header .hero-text p {
+      font-size: 16px;
+    }
+    #aboutus-hero .jumbotron h2 {
+      font-size: 36px;
+    }
+    #aboutus-hero .jumbotron h3 {
+      font-size: 32px;
+    }
+    #aboutus-hero .jumbotron p {
+      font-size: 18px;
+    }
+    #team .card-text {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 411px) {
+    #aboutus-hero .jumbotron {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (min-width: 500px) {
+    #team .card-body {
+      height: 120px;
+    }
+  }
+  /*# sourceMappingURL=main.css.map */
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <a class="navbar-brand" href="#">Totta </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Why Totta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="dropdown-item" href="#">For Parents and Kids</a>
+                    <a class="dropdown-item" href="#">For Teens</a>
+                    <a class="dropdown-item" href="#">Our Story</a>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Debit Cards
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                    <a class="dropdown-item" href="#">Debit cards for Kids</a>
+                    <a class="dropdown-item" href="#">Debit Cards for Teens</a>
+                    <a class="dropdown-item" href="#">Debit Cards Designs</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Features
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                    <a class="dropdown-item" href="#">Pocket Money and Chores</a>
+                    <a class="dropdown-item" href="#">Savings</a>
+                    <a class="dropdown-item" href="#">Parental Controls</a>
+                    <a class="dropdown-item" href="#">Money Missions</a>
+                    <a class="dropdown-item" href="#">Giftlinks</a>
+                    <a class="dropdown-item" href="#">Junior ISA</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Money Talk
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                  <a class="dropdown-item" href="#">Pocket Money Tips</a>
+                  <a class="dropdown-item" href="#">Chores Tips</a>
+                  <a class="dropdown-item" href="#">Financial Education Tips</a>
+                  <a class="dropdown-item" href="#">Online Money Safety</a>
+                  <a class="dropdown-item" href="#">Family Tips</a>
+                  <a class="dropdown-item" href="#">News</a>
+              </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               
+                <a href="#about" class="split"><button class="btn btn-primary" type="button">Start free trial </button></a>
+            </li>
+            <li class="nav-item">
+                
+                <a href="#about" class="split"><button class="btn btn-primary" type="button">Login </button></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="jumbotron1 mt-6">
+        <img src ="../public/images/habit-desktop.webp">
+
+      <div class="col-lg-6"> 
+        <br>
+        
+      <h1 class="display">A lifetime of financial learning start here</h1>
+      <br>
+      <p class="lead">Get all the tools to nurture financially healty kids- a prepaid debit card, app, and built-in Money Missions. Kids learn in the app and by using their card, and you get peace of mind with features created for families</p>
+      <hr class="my-4">
+      <p>Rated 4.2 out of 5 based on 9,615 reviews <br>on Trustpilot</p>
+    
+      <a class="btn btn-primary btn-lg" href="/register" role="button">Start free trial</a>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+    </div>
+  
+    <section> 
+<main> 
+  <div class="container text-center"> 
+<h3>The smart app that grows with your kids</h3>
+<p>guide, motivate and encourage kids and teens with app experiences tailored to their age</p>
+<br>
+<p> Plus, parents have a companion app, too. You can track progress, set flexible boundaries and goals, and get real-time spend notifications.</p>
+
+<br>
+<br>
+<br>
+<!-- Container (TOUR Section) -->
+
+
+
+<div class="content-wrapper">
+<h2>Why Parents love Totta</h2>
+<p class="text-center">92% of parents say their kids are more money confident since joining Totta.<br> Here are some of the smart features that help kids learn every day</p>
+<br>
+<br>
+<div class="row">
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Smart learning tools</strong><br> Set your child up for success by teaching them how to manage money responsibly.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/grid4_1-desktop.avif" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong>Total peace of mind</strong><br> Your child can gain independence safely and securely with features built for families.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Easy money management</strong><br> Make life easier with a smarter way to manage your child's money.</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Features your child will love</strong> Kids can pick a card to suit their personality - and customise it with their name or nickname, too!</div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+</div>
+
+  
+
+
+  <section class="icon-grid">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop ">
+                <div class="layout-column">
+                    <div class="grid-heading-container">
+                     
+                        <h2 class="icon-grid-title">How to get started with Totta</h2>
+                        <h3 class="icon-grid-subtitle">
+                            <h5>Ready to give Totta a try? Sign up for a free trial and get access to all Totta features free for 30 days.</h5>
+                            <h4></h4> After your free trial, your monthly fee will start at £3.99 per month per child.<br>
+                            <br>
+                            <strong>Follow these simple steps:</strong>
+                        </h3>
+                    </div>
+                    <div class="icon-grid-container">
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                            <img src="../public/images/grid3_1.avif" alt class="amp-img-mobile" layout="responsive" loading="lazy" width="60px" height="55px"></img>
+                            
+                            <div class="card-content">
+                                <br>
+                                
+                                <h6>Sign up for your 1-month free trial online</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                            <img src="../public/images/grid3_2.avif"  alt class="amp-img-desktop" layout="responsive" loading="lazy" width="54px" height="55px"></img>
+                            <div class="card-content">
+                          <br>
+                                <h6>Download the app  <br>kids can start learning through Money Missions instantly</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                          <img src="../public/images/grid3_3.avif"   alt class="amp-img-desktop" layout="responsive" loading="lazy" width="61px" height="55px"></amp-img>
+                            <div class="card-content">
+                               <br>
+                                <h6>Parents can set up pocket money, tasks & top up their child’s card</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                          <img src="../public/images/grid3_4.avif"   alt class="amp-img-desktop" layout="responsive" loading="lazy" width="58px" height="55px"></amp-img>
+                            <div class="card-content">
+                                <br>
+                                <h6>Your card will arrive <br>within 5-7 days—don’t forget to activate it!</h6>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="grid-btn-container">
+                        <a rel="noopener" id class="btn btn-primary" href="
+
+https://signup.gohenry.com/uk/parent-details
+
+" onclick="dataLayer.push({
+'event': 'interactionEvent',
+'event_name': 'cta_click',
+'events': { 
+'click_text': 'Sign up now', 
+'location': 'How to get started with GoHenry'
+}
+});">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="accordion">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop ">
+                <div class="layout-column half-section">
+                    <div class="copy-wrapper">
+                        <h2>Frequently asked questions</h2>
+                        <p class="subtext"></p>
+
+
+       
+                      <div class="w3-container"> 
+             <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-left-align w3-pale-red">
+               What age is a Totta kids debit card for?</button>
+                                      
+            <div id="Demo1" class="w3-hide w3-container w3-left-align w3-white">
+               <p>Totta is for children aged 6-18. It’s a great way for them to learn about budgeting and managing their money. Plus, it also helps them develop healthy saving habits that will last a lifetime. Ultimately, we know that every family has a different approach to money and learning—so it’s up to you when you feel your child is ready to give Totta a try.</p>
+             </div></div>
+
+<br>
+             <div class="w3-container">
+              <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                How much is a Totta kids debit card?</button>
+                
+                <div id="Demo2" class="w3-hide w3-container w3-left-align w3-white">
+                  <p>We currently charge one low monthly fee of £3.99 per month per child. This includes one free monthly top-up and gives you access to all of the features of GoHenry, including the children's debit card, paid tasks, parental controls, and more. You can find more about our pricing here.</p>
+                </div></div>
+
+                <br>
+                <div class="w3-container">
+                  <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                    How do I choose a Totta prepaid kids' debit card?</button>
+                    
+                    <div id="Demo3" class="w3-hide w3-container w3-left-align w3-white">
+                      <p>You can choose from more than 45+ designs and customize them, too. A children's debit card with their name? Oh, yeah! Say hello to GoHenry and get your first month free when you try one of our prepaid debit cards for kids.</p>
+                    </div></div>
+                    <br>
+
+                    <div class="w3-container">
+                      <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                        Where can you use Totta cards?</button>
+                        
+                        <div id="Demo4" class="w3-hide w3-container w3-left-align w3-white">
+                          <p>The Totta prepaid debit card can be used anywhere that Visa is accepted. This includes online, in stores, and at ATMs.</p>
+                        </div></div>
+                        <br>
+              <div class="w3-container"> 
+            <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-left-align w3-pale-red">
+              Are kids' debit cards a good alternative to bank cards and credit cards?</button>
+              
+              <div id="Demo5" class="w3-hide w3-container w3-left-align w3-white">
+                <p>Totta is for kids aged 6-18, which means children under 18 can start learning about money before they are eligible for a credit card and some bank cards. Our features have been designed specifically for this age group—and allow for safety and parent transparency at all times. From real-time spend notifications and instant transfers to the ability to set chores and pay pocket money — Totta is tailored to families. Plus, our safety features like the option to block and unblock cards, no overdraft facility and being able to block unsafe spend categories helps you stay in control, too.</p>
+                  
+              </div></div>
+              <br>
+              <div class="w3-container"> 
+                <button onclick="myFunction('Demo6')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                  Can a 6 to 12-year-old get a kids' prepaid debit card?</button>
+                  
+                  <div id="Demo6" class="w3-hide w3-container w3-left-align w3-white">
+                    <p>Unlike a regular bank card, kids aged 6-18 can get a Totta prepaid debit card. Once your child turns 13, they will automatically unlock their Totta 13+ account. With their teen debit card and account, they can use features like Apple Pay, and receive money via QR code — a great next step towards financial independence.</p>
+                      
+                  </div></div>     
+                  <br>
+                  <div class="w3-container"> 
+                    <button onclick="myFunction('Demo7')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                      Is the Totta kids' card a bank card?</button>
+                      
+                      <div id="Demo7" class="w3-hide w3-container w3-left-align w3-white">
+                        <p>Totta is a prepaid debit card and learning app. It works like a bank card but with loads of extra features to help your kids learn about money safely. They can learn money skills in-app, and practise by using their card, while you watch and guide with your parent app.</p>
+                      </div> </div>
+
+                      <br>
+                      <div class="w3-container"> 
+                        <button onclick="myFunction('Demo8')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                          What is the youngest age to get a kids' bank card?</button>
+                          
+                          <div id="Demo8" class="w3-hide w3-container w3-left-align w3-white">
+                            <p>Children in the UK need to be aged 11 or over to get a bank card. They can get a prepaid debit card like Totta from the age of six if a parent opens the account for them.</p>
+                          </div> </div>
+
+                          <br>
+                          <div class="w3-container"> 
+                            <button onclick="myFunction('Demo9')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                              Can the Totta card be used abroad like a kids bank card?</button>
+                              
+                              <div id="Demo9" class="w3-hide w3-container w3-left-align w3-white">
+                                <p>Your child can use their Totta debit card abroad fee-free. This is because Totta doesn’t charge commission or ATM withdrawal fees (though some ATMs charge their own fee). Just make sure your child knows to pay in local currency, as they could pay up to 7% more in fees if they pay in GBP abroad.</p>
+                              </div> </div>
+                              <br>
+                              <div class="w3-container"> 
+                                <button onclick="myFunction('Demo10')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                  Can my child withdraw cash using the Totta kids' debit card?</button>
+                                  
+                                  <div id="Demo10" class="w3-hide w3-container w3-left-align w3-white">
+                                    <p>Your child can use their Totta card to withdraw money at an ATM up to three times a day. There is a pre-set daily withdrawal limit of £120, but you can choose to set a lower limit in your parent app.</p>
+                                  </div> </div>
+
+                                  <br>
+                              <div class="w3-container"> 
+                                <button onclick="myFunction('Demo11')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                  Why should I get a prepaid debit card for my child?</button>
+                                  
+                                  <div id="Demo11" class="w3-hide w3-container w3-left-align w3-white">
+                                    <p>A Totta prepaid debit card is a great way to teach your child healthy money habits from a young age. Kids can learn about earning, saving and smart spending in-app, then practise with their own debit card. All while parents have full transparency through their companion account.</p>
+                                  </div> </div>
+
+                                  <br>
+                                  <div class="w3-container"> 
+                                    <button onclick="myFunction('Demo12')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                      Can under 18s get a contactless kids' debit card?</button>
+                                      
+                                      <div id="Demo12" class="w3-hide w3-container w3-left-align w3-white">
+                                        <p>Your child can make contactless payments using their Totta card for purchases of £100 or less in most shops. They just have to use Chip & PIN for their first transaction. If your child is aged 13+ they can also add their Totta card to Apple Pay via their Apple Pay wallet on their phone or their Totta app.</p>
+                                      </div> </div>
+        
+</section>
+<section class="popular-articles">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop">
+                <div class="layout-column">
+                    <div class="popular-articles-heading-container">
+                       <center> 
+                        <h2 class="popular-articles-title">Popular Articles</h2>
+                    </div>
+                    <div class="popular-articles-container">
+                        <section class="grid-card">
+                          
+                            <div class="card-content">
+                                <img src = "../public/images/grid4_1-desktop.avif" layout="responsive" loading="lazy" width="300px" height="300px"
+                                <center> 
+                                    <h5>What age can you get <br>a debit card in the UK?</h5>
+                               
+                                
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/what-age-can-you-get-a-debit-card-in-the-uk
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'What age can you get a debit card in the UK?'
+    }
+  });">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                            <div class="card-content">
+                              <img src = "../public/images/grid4_2-desktop.avif" layout="responsive" loading="lazy" width="300px" height="300px"
+                              <center> 
+                                    <h5>Financial literacy for kids</h5>
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/financial-literacy-for-kids-why-is-it-important
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'Financial literacy for kids'
+    }
+  });">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                            <div class="card-content">
+                              <img src = "../public/images/grid4_3-desktop.avif"layout="responsive" loading="lazy" width="300x" height="300px">
+                                    <h5>Kids bank account</h5>
+                                
+                          
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/how-do-i-open-a-bank-account-for-my-child-online
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'Kids bank account'
+    }
+    
+  });">Read More</a>
+                       </center>         </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+
+<div class="container">
+<div class="content-wrapper">
+    <div class="layout-coloumn align-center message">
+
+      <form action="action_page.php">
+        <div class="container">
+          <center> 
+        <h2>Want to read more?</h2>
+        <p>Get a fresh slice of money news, and the latest Totta updates, direct to your inbox.</p></div>
+
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      <br>
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+    
+
+
+    </div>
+
+    
+
+
+    <div class="layout-coloumn align-center privacy">
+        <p class="small center"><center><h6> Read our <a class="underline" href="/uk/terms-and-conditions/privacy-policy/" target="_blank">privacy policy</center></h6></a>
+        </p>
+    </div>
+    <div class="row-desktop space-between">
+        <di class="footer-icon-container">
+          
+            
+          <d class = "container1">
+              <div class="column1"> 
+               <h4><center> Company</center></h4> <p> 
+                <ul>
+                    <li>
+                        <a class="small link" href="/uk/press/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Press', 
+    'location': 'Footer'
+  }
+});">Press</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/careers/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Careers', 
+    'location': 'Footer'
+  }
+});">Careers</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Terms &amp; Conditions', 
+    'location': 'Footer'
+  }
+});">Terms &amp;Conditions</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/privacy-policy/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Privacy Policy', 
+    'location': 'Footer'
+  }
+});">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/cookie-policy/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Cookie Policy', 
+    'location': 'Footer'
+  }
+});">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://uk.community.gohenry.com/s/article/gb-How-do-I-make-a-complaint" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Complaints', 
+    'location': 'Footer'
+  }
+});">Complaints</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://uk.community.gohenry.com/s/" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Member Support', 
+    'location': 'Footer'
+  }
+});">Member Support</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/accessibility/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Accessibility', 
+    'location': 'Footer'
+  }
+});">Accessibility</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://app.impact.com/campaign-promo-signup/goHenry-UK.brand?execution=e6s1" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Affiliates', 
+    'location': 'Footer'
+  }
+});">Affiliates</a>
+                    </li>
+                </ul>
+              </p></div>
+          
+        
+        
+          <div class="column1"> 
+              
+                <h4><center> Resources</center></h4>
+                <ul>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/online-safety" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Online Safety Tips', 
+    'location': 'Footer'
+  }
+});">Online Safety Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/parental-controls" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Parental Controls Tips', 
+    'location': 'Footer'
+  }
+});">Parental Controls Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/chores" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Chores Tips', 
+    'location': 'Footer'
+  }
+});">Chores Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/pocket-money" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Pocket Money Tips', 
+    'location': 'Footer'
+  }
+});">Pocket Money Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Financial Education Tips', 
+    'location': 'Footer'
+  }
+});">Financial Education Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/family" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Family Tips', 
+    'location': 'Footer'
+  }
+});">Family Tips</a>
+                    </li>
+                </ul>
+            </div>
+          
+          <div class="column1"> 
+            <h4> <center>Popular Pages</h4></center></h4>
+               <p>  <ul>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/ways-to-teach-kids-about-money" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Teaching Kids About Money', 
+    'location': 'Footer'
+  }
+});">Teaching Kids About Money</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/pocket-money/how-much-pocket-money-should-we-give-our-kids" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How Much Pocket Money', 
+    'location': 'Footer'
+  }
+});">How Much Pocket Money</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/chores/age-appropriate-chore-list-for-kids" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Age Appropriate Chores', 
+    'location': 'Footer'
+  }
+});">Age Appropriate Chores</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/how-to-make-money-as-a-kid" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How to Make Money as a Kid', 
+    'location': 'Footer'
+  }
+});">How to Make Money as a Kid</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/what-age-can-you-get-a-debit-card-in-the-uk" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'What Age Can You Get a Debit Card', 
+    'location': 'Footer'
+  }
+});">What Age Can You Get a Debit Card</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/how-do-i-open-a-bank-account-for-my-child-online" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How to Open Kids Bank Account', 
+    'location': 'Footer'
+  }
+});">How to Open Kids Bank Account</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+    <div class="row-desktop space-between bottom">
+        <div class="country-switcher">
+            <a class="small link bold" href="https://www.gohenry.com/us/" rel="noopener" onclick="dataLayer.push({
+'event': 'interactionEvent',
+'event_name': 'navigation',
+'events': {
+'click_text': 'Go to US website',
+'location': 'Footer'
+}
+});
+"><br><center>Visit our Vietnamese site</a>
+            
+       
+        <div class="copy">
+            <p class="disclaimer small">© Totta Limited. All rights reserved. Totta is not a bank. The Totta card is issued by IDT Financial Services Limited, a principal member of Visa Europe. IDT Financial Services Limited is a regulated bank, licensed by The Gibraltar Financial Services Commission. Registered office: 57-63 Line Wall Road, Gibraltar. Registered No 95716.</p>
+            <p class="address small">All communications should be sent to Totta Ltd: address: </p>
+        </div>
+    </div>
+
+<br>
+<br>
+
+
+  </div>
+</section>
+      
+</section>
+</main>
+<footer>
+<p> &copy; 2024 Totta<br>Made by&copy Matylda~M </p>
+<br>
+<br>
+<br>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="js/animation.js"></script>
+<script src="js/jquery.waypoints.min"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<div class="footer mt-auto py-1 bg-light">
+  <div class="container">
+    <span class="text-muted">&copy; 2024 Totta. All rights reserved.</span>
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+     
+    </div>
+  </div>
+
+</div>
+</footer>
+<script>
+window.addEventListener("DOMContentLoaded", function() {
+let button = document.getElementById("menu-signup");
+let buttonLogin = document.getElementById("menu-login");
+button.style.display = "block";
+buttonLogin.style.display = "block";
+});
+window.addEventListener("scroll", function() {
+let scrollClass = document.getElementById('scroll').className;
+let header = document.getElementById("nav");
+
+if (window.scrollY > 5) {
+    header.classList.add(scrollClass);
+} else {
+    header.classList.remove(scrollClass);
+}
+});
+</script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+<script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+<script type="text/javascript" src="/uk/carousel.js"></script>
+<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<script type="text/javascript" src="/uk/remove_worker.js" defer></script>
+<script>
+var js = document.createElement("script");
+js.type = "text/javascript";
+if (env === 'test') {
+js.src = "https://cdn.cookielaw.org/consent/5c26b618-29ab-40d3-8be2-9e7c063f9882-test/OtAutoBlock.js";
+} else {
+js.src = "https://cdn.cookielaw.org/consent/5c26b618-29ab-40d3-8be2-9e7c063f9882/OtAutoBlock.js";
+}
+document.body.appendChild(js);
+</script>
+<script>
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+js.charset = "UTF-8"
+if (env === 'test') {
+js.setAttribute('data-domain-script', '5c26b618-29ab-40d3-8be2-9e7c063f9882-test')
+} else {
+js.setAttribute('data-domain-script', '5c26b618-29ab-40d3-8be2-9e7c063f9882')
+}
+document.body.appendChild(js);
+</script>
+<script type="text/javascript">
+setTimeout(()=>{
+function OptanonWrapper() {}
+}
+, 1000)
+</script>
+
+
+<script>
+// Add smooth scrolling to all links in navbar + footer link
+$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+
+// Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 900, function(){
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
+});
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  </script>
+  
+</body>
+</html>

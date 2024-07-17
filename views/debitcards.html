@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>debit cards</title>
+  <link rel="stylesheet" href="./css/debitcards.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <style>
+body {
+    padding-top: 56px; /* Height of the navbar */
+    font-family: 'Arial', sans-serif;
+    background-color: paleturquoise;
+}
+.jumbotron {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    background-image: url('..public/images/debitcards/mastercard-157441_1280.png');
+
+
+    color: black;
+    padding: 1rem 1rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="top-container">
+    <center> 
+    <img class="top-cloud" src="../public/images/debitcards/letter-39873_1280.png" alt="cloud" width="100", height="100">
+    <img class="top-cloud" src="../public/images/debitcards/round-869302_1280.png" alt="cloud" width="100", height="100">
+    <img class="top-cloud" src="../public/images/debitcards/letter-39873_1280.png" alt="cloud" width="100", height="100">
+    <img class="top-cloud" src="../public/images/debitcards/letter-39873_1280.png" alt="cloud" width="100", height="100">
+    <img class="top-cloud" src="../public/images/debitcards/alphabet-313947_1280.png" alt="cloud" width="100", height="100">
+<div> 
+<a href="./views/clock.html" target="_"></a>
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<canvas id="canvas" width="400" height="400" style="background-color:bluepowder">
+Sorry, your browser does not support canvas.
+</canvas>
+
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  const grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(let num = 1; num < 13; num++){
+    let ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+
+
+
+</div>
+    
+            
+          <h1 class="display-4">Money skills: unlocked</h1>
+          <br>
+          <p class="lead">Start your child's money journey with Totta. <br>Now with limited edition Pokemon TCG debit card desings!</p>
+          <hr class="my-4">
+          <p>Rated 4.2 out of 5 based on 9,615 reviews <br>on Trustpilot</p>
+        
+          <a class="btn btn-primary btn-lg" href="/register" role="button">Start free trial</a>
+          <br>
+          <br>
+          <br>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+        </div>
+        </div>
+        <center> 
+      
+    <img class="bottom-cloud"  src="../public/images/debitcards/mastercard-157441_1280.png" alt="cloud" width="500", height="300">
+    
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+
+      <img src="../public/images/debit.png" alt="matylda-profile-img">
+     
+    </div>
+    <hr>
+    <div class="skills">
+      <h2></h2>
+      <div class="skill-row">
+      
+<center> 
+        
+        
+
+      </div>
+      <div class="skill-row">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="200">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="100">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="200">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="100">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="200">
+        <img class="japan-img" src="../public/images/card1.webp" alt="japan-img" width="200", height="100">
+
+        <h3>Totta</h3>
+        <p>lorem ipsum</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <center> 
+      <h2>Get In Touch</h2>
+      
+      
+      <a class="btn" href="mailto:m_matylda@hotmail.com">CONTACT US</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container" src="../views/coupon.html">
+  
+
+    <p class="copyright">© Totta 2024</p>
+  </div>
+</body>
+
+</html>
