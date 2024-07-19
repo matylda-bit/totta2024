@@ -1,0 +1,1038 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Totta</title>
+
+    <script src="https://kit.fontawesome.com/544631e2ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" media='screen and (min-width: 576px)' href="css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="css/large.css">
+
+  <style>
+    div.gallery {
+  border: 1px solid #ccc;
+  border-radius:15px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.checked {
+  color: green;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <a class="navbar-brand" href="#">Totta </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Why Totta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="dropdown-item" href="parents.html">For Parents and Kids</a>
+                    <a class="dropdown-item" href="../views/forparents.html">For Teens</a>
+                    <a class="dropdown-item" href="#">Our Story</a>
+                    <a class="dropdown-item" href="#">Pricing</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Debit Cards
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                    <a class="dropdown-item" href="../views/debitcards.html">Debit cards for Kids</a>
+                    <a class="dropdown-item" href="#">Debit Cards for Teens</a>
+                    <a class="dropdown-item" href="#">Debit Cards Designs</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Features
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                    <a class="dropdown-item" href="#">Pocket Money and Chores</a>
+                    <a class="dropdown-item" href="#">Savings</a>
+                    <a class="dropdown-item" href="#">Parental Controls</a>
+                    <a class="dropdown-item" href="#">Money Missions</a>
+                    <a class="dropdown-item" href="#">Giftlinks</a>
+                    <a class="dropdown-item" href="#">Junior ISA</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Money Talk
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                  <a class="dropdown-item" href="#">Pocket Money Tips</a>
+                  <a class="dropdown-item" href="#">Chores Tips</a>
+                  <a class="dropdown-item" href="#">Financial Education Tips</a>
+                  <a class="dropdown-item" href="#">Online Money Safety</a>
+                  <a class="dropdown-item" href="#">Family Tips</a>
+                  <a class="dropdown-item" href="#">News</a>
+              </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+               
+                <a href="#about" class="split"><button class="btn btn-primary" type="button">Start free trial </button></a>
+            </li>
+            <li class="nav-item">
+                
+                <a href="../views/register.html" class="split" ><button class="btn btn-primary" type="button">Register</button></a>
+            
+                
+              <a href="../views/login.html" class="split" ><button class="btn btn-primary" type="button">Login</button></a>
+          </li>
+        </ul>
+    </div>
+</nav>
+<br>
+
+
+
+    <div class="jumbotron mt-4">
+
+      <div class="col-lg-4"> 
+        <br>
+      <h1 class="display-4">Money skills: unlocked</h1>
+      <br>
+      <p class="lead">Start your child's money journey with Totta. <br>Now with limited edition Pokemon TCG debit card desings!</p>
+      <hr class="my-4">
+      <p>Rated 4.2 out of 5 based on 9,615 reviews <br>on Trustpilot</p>
+      <center> 
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <br>
+      <a class="btn btn-primary btn-lg" href="/register" role="button">Start free trial</a>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple" href="../views/register.html"></i> Download</button>
+      <button type="button"class="btn btn-outline-light btn-lg download-button" ><i class="fab fa-google-play" ></i> Download </button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+    </div>
+  
+    <section> 
+<main> 
+  <div class="container text-center"> 
+<h3>52,000 + 5 star reviews on Trustpilot and the App Store and Google Play Store worldwide</h3>
+<p>Trustpilot, App Store, Google Play</p>
+<span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+<br>
+<br>
+<br>
+<!-- Container (TOUR Section) -->
+
+
+
+<div class="content-wrapper">
+<h2>Why Parents love Totta</h2>
+<p class="text-center">92% of parents say their kids are more money confident since joining Totta.<br> Here are some of the smart features that help kids learn every day</p>
+<br>
+<br>
+<div class="row">
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Smart learning tools</strong><br> Set your child up for success by teaching them how to manage money responsibly.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/grid4_1-desktop.avif" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong>Total peace of mind</strong><br> Your child can gain independence safely and securely with features built for families.</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Easy money management</strong><br> Make life easier with a smarter way to manage your child's money.</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="../public/images/habit-desktop.webp">
+        <img src="../public/images/habit-desktop.webp" alt="Mother and daughter" width="600" height="400">
+      </a>
+      <div class="desc"><strong> Features your child will love</strong> Kids can pick a card to suit their personality - and customise it with their name or nickname, too!</div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+</div>
+
+  
+
+
+  <section class="icon-grid">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop ">
+                <div class="layout-column">
+                    <div class="grid-heading-container">
+                     
+                        <h2 class="icon-grid-title">How to get started with Totta</h2>
+                        <h3 class="icon-grid-subtitle">
+                            <h5>Ready to give Totta a try? Sign up for a free trial and get access to all Totta features free for 30 days.</h5>
+                            <h4></h4> After your free trial, your monthly fee will start at £3.99 per month per child.<br>
+                            <br>
+                            <strong>Follow these simple steps:</strong>
+                        </h3>
+                    </div>
+                    <div class="icon-grid-container">
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                            <img src="../public/images/grid3_1.avif" alt class="amp-img-mobile" layout="responsive" loading="lazy" width="60px" height="55px"></img>
+                            
+                            <div class="card-content">
+                                <br>
+                                
+                                <h6>Sign up for your 1-month free trial online</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                            <img src="../public/images/grid3_2.avif"  alt class="amp-img-desktop" layout="responsive" loading="lazy" width="54px" height="55px"></img>
+                            <div class="card-content">
+                          <br>
+                                <h6>Download the app  <br>kids can start learning through Money Missions instantly</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                          <img src="../public/images/grid3_3.avif"   alt class="amp-img-desktop" layout="responsive" loading="lazy" width="61px" height="55px"></amp-img>
+                            <div class="card-content">
+                               <br>
+                                <h6>Parents can set up pocket money, tasks & top up their child’s card</h6>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                          <br>
+                          <center> 
+                          <img src="../public/images/grid3_4.avif"   alt class="amp-img-desktop" layout="responsive" loading="lazy" width="58px" height="55px"></amp-img>
+                            <div class="card-content">
+                                <br>
+                                <h6>Your card will arrive <br>within 5-7 days—don’t forget to activate it!</h6>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="grid-btn-container">
+                        <a rel="noopener" id class="btn btn-primary" href="
+
+https://signup.gohenry.com/uk/parent-details
+
+" onclick="dataLayer.push({
+'event': 'interactionEvent',
+'event_name': 'cta_click',
+'events': { 
+'click_text': 'Sign up now', 
+'location': 'How to get started with GoHenry'
+}
+});">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="accordion">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop ">
+                <div class="layout-column half-section">
+                    <div class="copy-wrapper">
+                        <h2>Frequently asked questions</h2>
+                        <p class="subtext"></p>
+
+
+       
+                      <div class="w3-container"> 
+             <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-left-align w3-pale-red">
+               What age is a Totta kids debit card for?</button>
+                                      
+            <div id="Demo1" class="w3-hide w3-container w3-left-align w3-white">
+               <p>Totta is for children aged 6-18. It’s a great way for them to learn about budgeting and managing their money. Plus, it also helps them develop healthy saving habits that will last a lifetime. Ultimately, we know that every family has a different approach to money and learning—so it’s up to you when you feel your child is ready to give Totta a try.</p>
+             </div></div>
+
+<br>
+             <div class="w3-container">
+              <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                How much is a Totta kids debit card?</button>
+                
+                <div id="Demo2" class="w3-hide w3-container w3-left-align w3-white">
+                  <p>We currently charge one low monthly fee of £3.99 per month per child. This includes one free monthly top-up and gives you access to all of the features of GoHenry, including the children's debit card, paid tasks, parental controls, and more. You can find more about our pricing here.</p>
+                </div></div>
+
+                <br>
+                <div class="w3-container">
+                  <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                    How do I choose a Totta prepaid kids' debit card?</button>
+                    
+                    <div id="Demo3" class="w3-hide w3-container w3-left-align w3-white">
+                      <p>You can choose from more than 45+ designs and customize them, too. A children's debit card with their name? Oh, yeah! Say hello to GoHenry and get your first month free when you try one of our prepaid debit cards for kids.</p>
+                    </div></div>
+                    <br>
+
+                    <div class="w3-container">
+                      <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                        Where can you use Totta cards?</button>
+                        
+                        <div id="Demo4" class="w3-hide w3-container w3-left-align w3-white">
+                          <p>The Totta prepaid debit card can be used anywhere that Visa is accepted. This includes online, in stores, and at ATMs.</p>
+                        </div></div>
+                        <br>
+              <div class="w3-container"> 
+            <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-left-align w3-pale-red">
+              Are kids' debit cards a good alternative to bank cards and credit cards?</button>
+              
+              <div id="Demo5" class="w3-hide w3-container w3-left-align w3-white">
+                <p>Totta is for kids aged 6-18, which means children under 18 can start learning about money before they are eligible for a credit card and some bank cards. Our features have been designed specifically for this age group—and allow for safety and parent transparency at all times. From real-time spend notifications and instant transfers to the ability to set chores and pay pocket money — Totta is tailored to families. Plus, our safety features like the option to block and unblock cards, no overdraft facility and being able to block unsafe spend categories helps you stay in control, too.</p>
+                  
+              </div></div>
+              <br>
+              <div class="w3-container"> 
+                <button onclick="myFunction('Demo6')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                  Can a 6 to 12-year-old get a kids' prepaid debit card?</button>
+                  
+                  <div id="Demo6" class="w3-hide w3-container w3-left-align w3-white">
+                    <p>Unlike a regular bank card, kids aged 6-18 can get a Totta prepaid debit card. Once your child turns 13, they will automatically unlock their Totta 13+ account. With their teen debit card and account, they can use features like Apple Pay, and receive money via QR code — a great next step towards financial independence.</p>
+                      
+                  </div></div>     
+                  <br>
+                  <div class="w3-container"> 
+                    <button onclick="myFunction('Demo7')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                      Is the Totta kids' card a bank card?</button>
+                      
+                      <div id="Demo7" class="w3-hide w3-container w3-left-align w3-white">
+                        <p>Totta is a prepaid debit card and learning app. It works like a bank card but with loads of extra features to help your kids learn about money safely. They can learn money skills in-app, and practise by using their card, while you watch and guide with your parent app.</p>
+                      </div> </div>
+
+                      <br>
+                      <div class="w3-container"> 
+                        <button onclick="myFunction('Demo8')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                          What is the youngest age to get a kids' bank card?</button>
+                          
+                          <div id="Demo8" class="w3-hide w3-container w3-left-align w3-white">
+                            <p>Children in the UK need to be aged 11 or over to get a bank card. They can get a prepaid debit card like Totta from the age of six if a parent opens the account for them.</p>
+                          </div> </div>
+
+                          <br>
+                          <div class="w3-container"> 
+                            <button onclick="myFunction('Demo9')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                              Can the Totta card be used abroad like a kids bank card?</button>
+                              
+                              <div id="Demo9" class="w3-hide w3-container w3-left-align w3-white">
+                                <p>Your child can use their Totta debit card abroad fee-free. This is because Totta doesn’t charge commission or ATM withdrawal fees (though some ATMs charge their own fee). Just make sure your child knows to pay in local currency, as they could pay up to 7% more in fees if they pay in GBP abroad.</p>
+                              </div> </div>
+                              <br>
+                              <div class="w3-container"> 
+                                <button onclick="myFunction('Demo10')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                  Can my child withdraw cash using the Totta kids' debit card?</button>
+                                  
+                                  <div id="Demo10" class="w3-hide w3-container w3-left-align w3-white">
+                                    <p>Your child can use their Totta card to withdraw money at an ATM up to three times a day. There is a pre-set daily withdrawal limit of £120, but you can choose to set a lower limit in your parent app.</p>
+                                  </div> </div>
+
+                                  <br>
+                              <div class="w3-container"> 
+                                <button onclick="myFunction('Demo11')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                  Why should I get a prepaid debit card for my child?</button>
+                                  
+                                  <div id="Demo11" class="w3-hide w3-container w3-left-align w3-white">
+                                    <p>A Totta prepaid debit card is a great way to teach your child healthy money habits from a young age. Kids can learn about earning, saving and smart spending in-app, then practise with their own debit card. All while parents have full transparency through their companion account.</p>
+                                  </div> </div>
+
+                                  <br>
+                                  <div class="w3-container"> 
+                                    <button onclick="myFunction('Demo12')" class="w3-btn w3-block w3-left-align w3-pale-red">
+                                      Can under 18s get a contactless kids' debit card?</button>
+                                      
+                                      <div id="Demo12" class="w3-hide w3-container w3-left-align w3-white">
+                                        <p>Your child can make contactless payments using their Totta card for purchases of £100 or less in most shops. They just have to use Chip & PIN for their first transaction. If your child is aged 13+ they can also add their Totta card to Apple Pay via their Apple Pay wallet on their phone or their Totta app.</p>
+                                      </div> </div>
+        
+</section>
+<section class="popular-articles">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="row-desktop">
+                <div class="layout-column">
+                    <div class="popular-articles-heading-container">
+                       <center> 
+                        <h2 class="popular-articles-title">Popular Articles</h2>
+                    </div>
+                    <div class="popular-articles-container">
+                        <section class="grid-card">
+                          
+                            <div class="card-content">
+                                <img src = "../public/images/grid4_1-desktop.avif" layout="responsive" loading="lazy" width="300px" height="300px"
+                                <center> 
+                                    <h5>What age can you get <br>a debit card in the UK?</h5>
+                               
+                                
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/what-age-can-you-get-a-debit-card-in-the-uk
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'What age can you get a debit card in the UK?'
+    }
+  });">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                            <div class="card-content">
+                              <img src = "../public/images/grid4_2-desktop.avif" layout="responsive" loading="lazy" width="300px" height="300px"
+                              <center> 
+                                    <h5>Financial literacy for kids</h5>
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/financial-literacy-for-kids-why-is-it-important
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'Financial literacy for kids'
+    }
+  });">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="grid-card">
+                            <div class="card-content">
+                              <img src = "../public/images/grid4_3-desktop.avif"layout="responsive" loading="lazy" width="300x" height="300px">
+                                    <h5>Kids bank account</h5>
+                                
+                          
+                                <div class="grid-btn-container">
+                                    <a rel="noopener" class="btn btn-primary" href="
+
+https://www.gohenry.com/uk/blog/financial-education/how-do-i-open-a-bank-account-for-my-child-online
+
+" onclick="dataLayer.push({
+    'event': 'interactionEvent',
+    'event_name': 'cta_click',
+    'events': { 
+      'click_text': 'Read More', 
+      'location': 'Kids bank account'
+    }
+    
+  });">Read More</a>
+                       </center>         </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+
+<div class="container">
+<div class="content-wrapper">
+    <div class="layout-coloumn align-center message">
+
+      <form action="action_page.php">
+        <div class="container">
+          <center> 
+        <h2>Want to read more?</h2>
+        <p>Get a fresh slice of money news, and the latest Totta updates, direct to your inbox.</p></div>
+
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+        </div>
+      <br>
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+    
+
+
+    </div>
+
+    
+
+
+    <div class="layout-coloumn align-center privacy">
+        <p class="small center"><center><h6> Read our <a class="underline" href="/uk/terms-and-conditions/privacy-policy/" target="_blank">privacy policy</center></h6></a>
+        </p>
+    </div>
+    <div class="row-desktop space-between">
+        <di class="footer-icon-container">
+          
+            
+          <d class = "container1">
+              <div class="column1"> 
+               <h4><center> Company</center></h4> <p> 
+                <ul>
+                    <li>
+                        <a class="small link" href="/uk/press/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Press', 
+    'location': 'Footer'
+  }
+});">Press</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/careers/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Careers', 
+    'location': 'Footer'
+  }
+});">Careers</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Terms &amp; Conditions', 
+    'location': 'Footer'
+  }
+});">Terms &amp;Conditions</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/privacy-policy/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Privacy Policy', 
+    'location': 'Footer'
+  }
+});">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/cookie-policy/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Cookie Policy', 
+    'location': 'Footer'
+  }
+});">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://uk.community.gohenry.com/s/article/gb-How-do-I-make-a-complaint" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Complaints', 
+    'location': 'Footer'
+  }
+});">Complaints</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://uk.community.gohenry.com/s/" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Member Support', 
+    'location': 'Footer'
+  }
+});">Member Support</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="/uk/terms-and-conditions/accessibility/" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Accessibility', 
+    'location': 'Footer'
+  }
+});">Accessibility</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://app.impact.com/campaign-promo-signup/goHenry-UK.brand?execution=e6s1" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Affiliates', 
+    'location': 'Footer'
+  }
+});">Affiliates</a>
+                    </li>
+                </ul>
+              </p></div>
+          
+        
+        
+          <div class="column1"> 
+              
+                <h4><center> Resources</center></h4>
+                <ul>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/online-safety" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Online Safety Tips', 
+    'location': 'Footer'
+  }
+});">Online Safety Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/parental-controls" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Parental Controls Tips', 
+    'location': 'Footer'
+  }
+});">Parental Controls Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/chores" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Chores Tips', 
+    'location': 'Footer'
+  }
+});">Chores Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/pocket-money" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Pocket Money Tips', 
+    'location': 'Footer'
+  }
+});">Pocket Money Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Financial Education Tips', 
+    'location': 'Footer'
+  }
+});">Financial Education Tips</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/family" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Family Tips', 
+    'location': 'Footer'
+  }
+});">Family Tips</a>
+                    </li>
+                </ul>
+            </div>
+          
+          <div class="column1"> 
+            <h4> <center>Popular Pages</h4></center></h4>
+               <p>  <ul>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/ways-to-teach-kids-about-money" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Teaching Kids About Money', 
+    'location': 'Footer'
+  }
+});">Teaching Kids About Money</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/pocket-money/how-much-pocket-money-should-we-give-our-kids" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How Much Pocket Money', 
+    'location': 'Footer'
+  }
+});">How Much Pocket Money</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/chores/age-appropriate-chore-list-for-kids" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'Age Appropriate Chores', 
+    'location': 'Footer'
+  }
+});">Age Appropriate Chores</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/how-to-make-money-as-a-kid" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How to Make Money as a Kid', 
+    'location': 'Footer'
+  }
+});">How to Make Money as a Kid</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/what-age-can-you-get-a-debit-card-in-the-uk" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'What Age Can You Get a Debit Card', 
+    'location': 'Footer'
+  }
+});">What Age Can You Get a Debit Card</a>
+                    </li>
+                    <li>
+                        <a class="small link" href="https://www.gohenry.com/uk/blog/financial-education/how-do-i-open-a-bank-account-for-my-child-online" target="_blank" rel="noopener" onclick="dataLayer.push({
+  'event': 'interactionEvent',
+  'event_name': 'navigation',
+  'events': { 
+    'click_text': 'How to Open Kids Bank Account', 
+    'location': 'Footer'
+  }
+});">How to Open Kids Bank Account</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+    <div class="row-desktop space-between bottom">
+        <div class="country-switcher">
+            <a class="small link bold" href="https://www.gohenry.com/us/" rel="noopener" onclick="dataLayer.push({
+'event': 'interactionEvent',
+'event_name': 'navigation',
+'events': {
+'click_text': 'Go to US website',
+'location': 'Footer'
+}
+});
+"><br><center>Visit our Vietnamese site</a>
+            
+       
+        <div class="copy">
+            <p class="disclaimer small">© Totta Limited. All rights reserved. Totta is not a bank. The Totta card is issued by IDT Financial Services Limited, a principal member of Visa Europe. IDT Financial Services Limited is a regulated bank, licensed by The Gibraltar Financial Services Commission. Registered office: 57-63 Line Wall Road, Gibraltar. Registered No 95716.</p>
+            <p class="address small">All communications should be sent to Totta Ltd: address: </p>
+        </div>
+    </div>
+
+
+
+<section id="achievements" class="scroll-fix">
+  <div class="jumbotron jumbotron-fluid">
+      <h2 class="os-animation visibility" data-animation="fadeIn"></h2>
+      <h2 class="animated flip">Totta</h2>
+
+      <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+
+      <div class="wrapper row achievement-list">
+
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".2s">
+              <i class="fas fa-thumbs-up"></i>
+             <p><br></p>
+             
+              <p class="achievement-number">100 %</p>
+              <p class="achievement-text">happy<br> clients</p> 
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".4s">
+              <i class="fas fa-trophy"></i>
+              <p><br></p>
+              <p class="achievement-number"></p>
+              <p class="achievement-text">beautiful card design<br></p>
+              <i class="circle2"></i></i>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".1s">
+              <i class="fas fa-user-friends"></i>
+              <p><br></p>
+              <p class="achievement-number">143</p>
+              <p><span class="test1">happy</span></p>
+              <p class="achievement-text">employees</p>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".35s">
+              <i class="far fa-building"></i>
+              <p><br></p>
+              <p class="achievement-number"></p>
+              <p><span class="test1">offices</span></p>
+              <p class="achievement-text"> around the world</p>
+              
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".25s">
+              <i class="fas fa-dice"></i>
+              <p><br></p>
+              <p class="achievement-number">58</p>
+              <p class="achievement-text">stworzonych gier</p>
+             
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility"
+              data-animation="bounceIn" data-delay=".3s">
+              <i class="fas fa-share-alt"></i>
+              <p><br></p>
+              <p class="achievement-number">80.000</p>
+              <p class="achievement-text">Totta's fans</p>
+          </div>
+      </div>
+  </div>
+</section>
+      
+</section>
+</main>
+<footer>
+<p></p>
+<br>
+<br>
+<br>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="js/animation.js"></script>
+<script src="js/jquery.waypoints.min"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<div class="footer mt-auto py-1 bg-light">
+  <div class="container">
+    <span class="text-muted">&copy; 2024 Totta. All rights reserved.</span>
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+     
+    </div>
+  </div>
+
+</div>
+</footer>
+<script>
+window.addEventListener("DOMContentLoaded", function() {
+let button = document.getElementById("menu-signup");
+let buttonLogin = document.getElementById("menu-login");
+button.style.display = "block";
+buttonLogin.style.display = "block";
+});
+window.addEventListener("scroll", function() {
+let scrollClass = document.getElementById('scroll').className;
+let header = document.getElementById("nav");
+
+if (window.scrollY > 5) {
+    header.classList.add(scrollClass);
+} else {
+    header.classList.remove(scrollClass);
+}
+});
+</script>
+<script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+<script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+<script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+<script type="text/javascript" src="/uk/carousel.js"></script>
+<script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+<script type="text/javascript" src="/uk/remove_worker.js" defer></script>
+<script>
+var js = document.createElement("script");
+js.type = "text/javascript";
+if (env === 'test') {
+js.src = "https://cdn.cookielaw.org/consent/5c26b618-29ab-40d3-8be2-9e7c063f9882-test/OtAutoBlock.js";
+} else {
+js.src = "https://cdn.cookielaw.org/consent/5c26b618-29ab-40d3-8be2-9e7c063f9882/OtAutoBlock.js";
+}
+document.body.appendChild(js);
+</script>
+<script>
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+js.charset = "UTF-8"
+if (env === 'test') {
+js.setAttribute('data-domain-script', '5c26b618-29ab-40d3-8be2-9e7c063f9882-test')
+} else {
+js.setAttribute('data-domain-script', '5c26b618-29ab-40d3-8be2-9e7c063f9882')
+}
+document.body.appendChild(js);
+</script>
+<script type="text/javascript">
+setTimeout(()=>{
+function OptanonWrapper() {}
+}
+, 1000)
+</script>
+
+
+<script>
+// Add smooth scrolling to all links in navbar + footer link
+$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+
+// Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 900, function(){
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+} // End if
+});
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  </script>
+  
+</body>
+</html>
